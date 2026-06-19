@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A1B2C3D4-E5F6-7890-ABCD-EF1234567890}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ElectroJoule</RootNamespace>
+    <AssemblyName>ElectroJoule</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseWindowsForms>true</UseWindowsForms>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Data" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="UI\Estilos.cs" />
+    <Compile Include="UI\frmBaseHijo.cs" />
+    <Compile Include="UI\frmBaseHijo.Designer.cs">
+      <DependentUpon>frmBaseHijo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\frmLogin.cs" />
+    <Compile Include="UI\frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\frmPrincipal.cs" />
+    <Compile Include="UI\frmPrincipal.Designer.cs">
+      <DependentUpon>frmPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\frmComponentes.cs" />
+    <Compile Include="UI\frmComponentes.Designer.cs">
+      <DependentUpon>frmComponentes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\frmCategorias.cs" />
+    <Compile Include="UI\frmCategorias.Designer.cs">
+      <DependentUpon>frmCategorias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\frmMarcas.cs" />
+    <Compile Include="UI\frmMarcas.Designer.cs">
+      <DependentUpon>frmMarcas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\frmCatalogo.cs" />
+    <Compile Include="UI\frmCatalogo.Designer.cs">
+      <DependentUpon>frmCatalogo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ucProductoCard.cs" />
+    <Compile Include="UI\ucProductoCard.Designer.cs">
+      <DependentUpon>ucProductoCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\frmCarrito.cs" />
+    <Compile Include="UI\frmCarrito.Designer.cs">
+      <DependentUpon>frmCarrito.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\frmConfirmarVenta.cs" />
+    <Compile Include="UI\frmConfirmarVenta.Designer.cs">
+      <DependentUpon>frmConfirmarVenta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\frmComprobante.cs" />
+    <Compile Include="UI\frmComprobante.Designer.cs">
+      <DependentUpon>frmComprobante.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\frmPedidos.cs" />
+    <Compile Include="UI\frmPedidos.Designer.cs">
+      <DependentUpon>frmPedidos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\frmPago.cs" />
+    <Compile Include="UI\frmPago.Designer.cs">
+      <DependentUpon>frmPago.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\frmDevoluciones.cs" />
+    <Compile Include="UI\frmDevoluciones.Designer.cs">
+      <DependentUpon>frmDevoluciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\frmClientes.cs" />
+    <Compile Include="UI\frmClientes.Designer.cs">
+      <DependentUpon>frmClientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\frmProveedores.cs" />
+    <Compile Include="UI\frmProveedores.Designer.cs">
+      <DependentUpon>frmProveedores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\frmReportes.cs" />
+    <Compile Include="UI\frmReportes.Designer.cs">
+      <DependentUpon>frmReportes.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
