@@ -11,7 +11,10 @@ namespace ElectroJoule.UI
 
         protected override void Dispose(bool disposing)
         {
-            if (disposing && (components != null)) components.Dispose();
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
             base.Dispose(disposing);
         }
 
@@ -25,48 +28,57 @@ namespace ElectroJoule.UI
             ((System.ComponentModel.ISupportInitialize)(this.picImagen)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numCantidad)).BeginInit();
             this.SuspendLayout();
-
+            // 
             // picImagen
-            this.picImagen.Location = new System.Drawing.Point(8, 8);
-            this.picImagen.Size = new System.Drawing.Size(184, 120);
+            // 
+            this.picImagen.BackColor = System.Drawing.Color.White;
+            this.picImagen.Location = new System.Drawing.Point(10, 10);
+            this.picImagen.Name = "picImagen";
+            this.picImagen.Size = new System.Drawing.Size(180, 120);
             this.picImagen.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picImagen.TabStop = false;
-            this.picImagen.Name = "picImagen";
-            this.picImagen.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-
+            // 
             // lblNombre
-            this.lblNombre.Location = new System.Drawing.Point(8, 136);
-            this.lblNombre.Size = new System.Drawing.Size(184, 32);
+            // 
+            this.lblNombre.Font = new System.Drawing.Font("Segoe UI Semibold", 10F);
+            this.lblNombre.Location = new System.Drawing.Point(10, 136);
             this.lblNombre.Name = "lblNombre";
+            this.lblNombre.Size = new System.Drawing.Size(180, 36);
             this.lblNombre.Text = "Nombre del producto";
-
+            // 
             // lblPrecio
-            this.lblPrecio.Location = new System.Drawing.Point(8, 170);
-            this.lblPrecio.Size = new System.Drawing.Size(184, 20);
-            this.lblPrecio.Name = "lblPrecio";
-            this.lblPrecio.Text = "$ 0.00";
+            // 
+            this.lblPrecio.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
             this.lblPrecio.ForeColor = System.Drawing.Color.FromArgb(46, 117, 182);
-            this.lblPrecio.Font = new System.Drawing.Font("Segoe UI", 9f, System.Drawing.FontStyle.Bold);
-
+            this.lblPrecio.Location = new System.Drawing.Point(10, 172);
+            this.lblPrecio.Name = "lblPrecio";
+            this.lblPrecio.Size = new System.Drawing.Size(180, 24);
+            this.lblPrecio.Text = "$ 0.00";
+            // 
             // numCantidad
-            this.numCantidad.Location = new System.Drawing.Point(8, 196);
-            this.numCantidad.Size = new System.Drawing.Size(80, 24);
-            this.numCantidad.Minimum = 1;
-            this.numCantidad.Maximum = 999;
-            this.numCantidad.Value = 1;
+            // 
+            this.numCantidad.Location = new System.Drawing.Point(10, 204);
+            this.numCantidad.Minimum = new decimal(new int[] { 1, 0, 0, 0});
             this.numCantidad.Name = "numCantidad";
-
+            this.numCantidad.Size = new System.Drawing.Size(50, 23);
+            this.numCantidad.Value = new decimal(new int[] { 1, 0, 0, 0});
+            // 
             // btnAgregar
-            this.btnAgregar.Location = new System.Drawing.Point(96, 194);
-            this.btnAgregar.Size = new System.Drawing.Size(96, 26);
-            this.btnAgregar.Name = "btnAgregar";
-            this.btnAgregar.Text = "Agregar al carrito";
+            // 
             this.btnAgregar.BackColor = System.Drawing.Color.FromArgb(46, 117, 182);
-            this.btnAgregar.ForeColor = System.Drawing.Color.White;
             this.btnAgregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAgregar.ForeColor = System.Drawing.Color.White;
+            this.btnAgregar.Location = new System.Drawing.Point(66, 203);
+            this.btnAgregar.Name = "btnAgregar";
+            this.btnAgregar.Size = new System.Drawing.Size(124, 26);
+            this.btnAgregar.Text = "Agregar";
+            this.btnAgregar.UseVisualStyleBackColor = false;
             this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
-
+            // 
             // ucProductoCard
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Controls.Add(this.picImagen);
@@ -76,7 +88,6 @@ namespace ElectroJoule.UI
             this.Controls.Add(this.btnAgregar);
             this.Name = "ucProductoCard";
             this.Size = new System.Drawing.Size(200, 240);
-
             ((System.ComponentModel.ISupportInitialize)(this.picImagen)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numCantidad)).EndInit();
             this.ResumeLayout(false);
