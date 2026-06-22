@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Finalizar compra — ElectroJoule</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+    <link rel="stylesheet" href="estilos.css" />
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark ej-navbar">
+    <div class="container-xxl">
+        <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+            <span class="ej-logo-icon"><i class="bi bi-lightning-charge-fill"></i></span>
+            <span class="fw-bold fs-5">ElectroJoule</span>
+        </a>
+    </div>
+</nav>
+
+<div class="container-xxl py-4">
+    <h1 class="h3 fw-bold mb-4"><i class="bi bi-lock me-2 text-primary"></i>Finalizar compra</h1>
+
+    <div class="row g-4">
+        <!-- Datos del comprador -->
+        <div class="col-lg-7">
+            <div class="card shadow-sm border-0 rounded-3">
+                <div class="card-header ej-card-header-primary border-0 rounded-top-3">
+                    <h5 class="mb-0 text-white fw-semibold"><i class="bi bi-person me-2"></i>Datos del comprador</h5>
+                </div>
+                <div class="card-body p-4">
+                    <div class="row g-3">
+                        <div class="col-12">
+                            <label class="form-label fw-semibold">Nombre completo <span class="text-danger">*</span></label>
+                            <input type="text" class="form-control" value="Juan Pérez" />
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label fw-semibold">Email <span class="text-danger">*</span></label>
+                            <input type="email" class="form-control" value="juan.perez@email.com" />
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label fw-semibold">Teléfono</label>
+                            <input type="tel" class="form-control" value="11 4567-8900" />
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label fw-semibold">DNI <span class="text-danger">*</span></label>
+                            <input type="text" class="form-control" value="30123456" />
+                        </div>
+                    </div>
+
+                    <hr class="my-4" />
+                    <h6 class="fw-semibold mb-3"><i class="bi bi-credit-card me-2 text-primary"></i>Método de pago</h6>
+                    <div class="card bg-light border-0 p-3 mb-4">
+                        <div class="d-flex align-items-center gap-3">
+                            <img src="https://http2.mlstatic.com/frontend-assets/payment-component/logos/mp_logo.svg" alt="Mercado Pago" height="32" />
+                            <div>
+                                <div class="fw-semibold">Mercado Pago</div>
+                                <small class="text-muted">Tarjeta de crédito/débito, efectivo (Rapipago/PagoFácil), transferencia bancaria y cuotas.</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="exito.html" class="btn btn-primary btn-lg w-100"><i class="bi bi-shield-check me-2"></i>Ir a pagar con Mercado Pago</a>
+                    <p class="text-center text-muted small mt-2"><i class="bi bi-lock-fill me-1"></i>Serás redirigido al sitio seguro de Mercado Pago</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Resumen -->
+        <div class="col-lg-5">
+            <div class="card shadow-sm border-0 rounded-3">
+                <div class="card-header bg-light border-0 rounded-top-3"><h5 class="mb-0 fw-semibold">Resumen del pedido</h5></div>
+                <div class="card-body p-0">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item px-3 py-2">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="d-flex align-items-center gap-2">
+                                    <img src="https://placehold.co/480x340/1a1a2e/white?text=Arduino" style="width:40px;height:28px;object-fit:cover;" class="rounded-1" />
+                                    <div><div class="small fw-semibold">Arduino Uno R3</div><div class="text-muted" style="font-size:.75rem;">x2 · $8.500 c/u</div></div>
+                                </div>
+                                <span class="fw-semibold small">$17.000</span>
+                            </div>
+                        </li>
+                        <li class="list-group-item px-3 py-2">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="d-flex align-items-center gap-2">
+                                    <img src="https://placehold.co/480x340/0f3460/white?text=ESP32" style="width:40px;height:28px;object-fit:cover;" class="rounded-1" />
+                                    <div><div class="small fw-semibold">ESP32 DevKit V1</div><div class="text-muted" style="font-size:.75rem;">x1 · $3.200 c/u</div></div>
+                                </div>
+                                <span class="fw-semibold small">$3.200</span>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="p-3">
+                        <div class="d-flex justify-content-between fw-bold fs-5"><span>Total</span><span class="ej-precio">$20.200</span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-3 text-center"><a href="carrito.html" class="text-muted small text-decoration-none"><i class="bi bi-arrow-left me-1"></i>Volver al carrito</a></div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mi Carrito — ElectroJoule</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+    <link rel="stylesheet" href="estilos.css" />
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark ej-navbar">
+    <div class="container-xxl">
+        <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+            <span class="ej-logo-icon"><i class="bi bi-lightning-charge-fill"></i></span>
+            <span class="fw-bold fs-5">ElectroJoule</span>
+        </a>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item"><a class="nav-link" href="index.html"><i class="bi bi-grid me-1"></i>Catálogo</a></li>
+            </ul>
+            <a href="carrito.html" class="btn btn-outline-light btn-sm position-relative">
+                <i class="bi bi-cart3 me-1"></i>Carrito
+                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-warning text-dark">3</span>
+            </a>
+        </div>
+    </div>
+</nav>
+
+<div class="container-xxl py-4">
+    <h1 class="h3 fw-bold mb-4"><i class="bi bi-cart3 me-2 text-primary"></i>Mi Carrito</h1>
+
+    <div class="row g-4">
+        <!-- Items -->
+        <div class="col-lg-8">
+            <div class="card shadow-sm border-0 rounded-3">
+                <div class="card-body p-0">
+                    <div class="table-responsive">
+                        <table class="table table-hover align-middle mb-0">
+                            <thead class="table-light">
+                                <tr>
+                                    <th class="ps-3">Producto</th>
+                                    <th class="text-center">Precio</th>
+                                    <th class="text-center" style="width:130px">Cantidad</th>
+                                    <th class="text-end">Subtotal</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="ps-3">
+                                        <div class="d-flex align-items-center gap-3">
+                                            <img src="https://placehold.co/480x340/1a1a2e/white?text=Arduino+Uno+R3" style="width:60px;height:42px;object-fit:cover;" class="rounded-2 shadow-sm" />
+                                            <span class="fw-semibold small">Arduino Uno R3</span>
+                                        </div>
+                                    </td>
+                                    <td class="text-center text-muted">$8.500</td>
+                                    <td class="text-center"><input type="number" value="2" min="1" class="form-control form-control-sm text-center mx-auto" style="width:60px" /></td>
+                                    <td class="text-end fw-bold">$17.000</td>
+                                    <td class="text-center"><button class="btn btn-sm btn-outline-danger border-0"><i class="bi bi-trash3"></i></button></td>
+                                </tr>
+                                <tr>
+                                    <td class="ps-3">
+                                        <div class="d-flex align-items-center gap-3">
+                                            <img src="https://placehold.co/480x340/0f3460/white?text=ESP32+DevKit" style="width:60px;height:42px;object-fit:cover;" class="rounded-2 shadow-sm" />
+                                            <span class="fw-semibold small">ESP32 DevKit V1</span>
+                                        </div>
+                                    </td>
+                                    <td class="text-center text-muted">$3.200</td>
+                                    <td class="text-center"><input type="number" value="1" min="1" class="form-control form-control-sm text-center mx-auto" style="width:60px" /></td>
+                                    <td class="text-end fw-bold">$3.200</td>
+                                    <td class="text-center"><button class="btn btn-sm btn-outline-danger border-0"><i class="bi bi-trash3"></i></button></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-2 d-flex justify-content-between">
+                <a href="index.html" class="btn btn-outline-secondary btn-sm"><i class="bi bi-arrow-left me-1"></i>Seguir comprando</a>
+                <button class="btn btn-outline-danger btn-sm"><i class="bi bi-trash3 me-1"></i>Vaciar carrito</button>
+            </div>
+        </div>
+
+        <!-- Resumen -->
+        <div class="col-lg-4">
+            <div class="card shadow-sm border-0 rounded-3">
+                <div class="card-header ej-card-header-primary border-0 rounded-top-3">
+                    <h5 class="mb-0 text-white fw-semibold"><i class="bi bi-receipt me-2"></i>Resumen del pedido</h5>
+                </div>
+                <div class="card-body">
+                    <div class="d-flex justify-content-between mb-2 text-muted small"><span>Subtotal (3 productos)</span><span>$20.200</span></div>
+                    <div class="d-flex justify-content-between mb-2 text-muted small"><span>Envío</span><span class="text-success fw-semibold">A calcular</span></div>
+                    <hr />
+                    <div class="d-flex justify-content-between fw-bold fs-5 mb-4"><span>Total</span><span class="ej-precio">$20.200</span></div>
+                    <a href="checkout.html" class="btn btn-primary btn-lg w-100"><i class="bi bi-lock me-2"></i>Finalizar compra</a>
+                    <div class="text-center mt-3">
+                        <img src="https://http2.mlstatic.com/frontend-assets/payment-component/logos/mp_logo.svg" alt="Mercado Pago" height="24" class="opacity-75 me-1" />
+                        <small class="text-muted">Pago seguro con Mercado Pago</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
