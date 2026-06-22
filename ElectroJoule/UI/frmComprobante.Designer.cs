@@ -3,6 +3,8 @@ namespace ElectroJoule.UI
     partial class frmComprobante
     {
         private System.ComponentModel.IContainer components = null;
+        private System.Windows.Forms.Panel pnlEncabezado;
+        private System.Windows.Forms.Label lblTituloForm;
         private System.Windows.Forms.Panel pnlCabecera;
         private System.Windows.Forms.Label lblNumero;
         private System.Windows.Forms.Label lblFecha;
@@ -42,7 +44,26 @@ namespace ElectroJoule.UI
             ((System.ComponentModel.ISupportInitialize)(this.dgvDetalle)).BeginInit();
             this.pnlVisor.SuspendLayout();
             this.pnlBotonera.SuspendLayout();
+            this.pnlEncabezado = new System.Windows.Forms.Panel();
+            this.lblTituloForm = new System.Windows.Forms.Label();
+            this.pnlEncabezado.SuspendLayout();
             this.SuspendLayout();
+
+            // pnlEncabezado
+            this.pnlEncabezado.BackColor = System.Drawing.Color.FromArgb(46, 117, 182);
+            this.pnlEncabezado.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlEncabezado.Height = 40;
+            this.pnlEncabezado.Name = "pnlEncabezado";
+            this.pnlEncabezado.Controls.Add(this.lblTituloForm);
+
+            // lblTituloForm
+            this.lblTituloForm.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblTituloForm.ForeColor = System.Drawing.Color.White;
+            this.lblTituloForm.Font = new System.Drawing.Font("Segoe UI Semibold", 12f);
+            this.lblTituloForm.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblTituloForm.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.lblTituloForm.Text = "Comprobante de Venta";
+            this.lblTituloForm.Name = "lblTituloForm";
 
             // pnlCabecera
             this.pnlCabecera.Controls.Add(this.lblNumero);
@@ -83,10 +104,10 @@ namespace ElectroJoule.UI
             this.dgvDetalle.AllowUserToAddRows = false;
             this.dgvDetalle.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvDetalle.Name = "dgvDetalle";
-            var colComp = new System.Windows.Forms.DataGridViewTextBoxColumn { Name = "colComponente", HeaderText = "Componente", DataPropertyName = "Componente" };
-            var colCant = new System.Windows.Forms.DataGridViewTextBoxColumn { Name = "colCantidad", HeaderText = "Cantidad", DataPropertyName = "Cantidad" };
-            var colPrec = new System.Windows.Forms.DataGridViewTextBoxColumn { Name = "colPrecio", HeaderText = "Precio", DataPropertyName = "Precio" };
-            var colSub = new System.Windows.Forms.DataGridViewTextBoxColumn { Name = "colSubtotal", HeaderText = "Subtotal", DataPropertyName = "Subtotal" };
+            System.Windows.Forms.DataGridViewTextBoxColumn colComp = new System.Windows.Forms.DataGridViewTextBoxColumn { Name = "colComponente", HeaderText = "Componente", DataPropertyName = "Componente" };
+            System.Windows.Forms.DataGridViewTextBoxColumn colCant = new System.Windows.Forms.DataGridViewTextBoxColumn { Name = "colCantidad", HeaderText = "Cantidad", DataPropertyName = "Cantidad" };
+            System.Windows.Forms.DataGridViewTextBoxColumn colPrec = new System.Windows.Forms.DataGridViewTextBoxColumn { Name = "colPrecio", HeaderText = "Precio", DataPropertyName = "Precio" };
+            System.Windows.Forms.DataGridViewTextBoxColumn colSub = new System.Windows.Forms.DataGridViewTextBoxColumn { Name = "colSubtotal", HeaderText = "Subtotal", DataPropertyName = "Subtotal" };
             this.dgvDetalle.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] { colComp, colCant, colPrec, colSub });
 
             // lblTotal
@@ -144,6 +165,7 @@ namespace ElectroJoule.UI
 
             // frmComprobante
             this.ClientSize = new System.Drawing.Size(760, 640);
+            this.Controls.Add(this.pnlEncabezado);
             this.Controls.Add(this.pnlVisor);
             this.Controls.Add(this.lblTotal);
             this.Controls.Add(this.dgvDetalle);
@@ -157,6 +179,7 @@ namespace ElectroJoule.UI
             ((System.ComponentModel.ISupportInitialize)(this.dgvDetalle)).EndInit();
             this.pnlVisor.ResumeLayout(false);
             this.pnlBotonera.ResumeLayout(false);
+            this.pnlEncabezado.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
         }

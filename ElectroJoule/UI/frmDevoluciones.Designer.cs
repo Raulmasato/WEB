@@ -3,6 +3,8 @@ namespace ElectroJoule.UI
     partial class frmDevoluciones
     {
         private System.ComponentModel.IContainer components = null;
+        private System.Windows.Forms.Panel pnlEncabezado;
+        private System.Windows.Forms.Label lblTituloForm;
         private System.Windows.Forms.Panel pnlVentaOrigen;
         private System.Windows.Forms.TextBox txtBuscarVenta;
         private System.Windows.Forms.Button btnBuscarVenta;
@@ -35,7 +37,26 @@ namespace ElectroJoule.UI
             this.pnlVentaOrigen.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvItems)).BeginInit();
             this.pnlMotivo.SuspendLayout();
+            this.pnlEncabezado = new System.Windows.Forms.Panel();
+            this.lblTituloForm = new System.Windows.Forms.Label();
+            this.pnlEncabezado.SuspendLayout();
             this.SuspendLayout();
+
+            // pnlEncabezado
+            this.pnlEncabezado.BackColor = System.Drawing.Color.FromArgb(46, 117, 182);
+            this.pnlEncabezado.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlEncabezado.Height = 40;
+            this.pnlEncabezado.Name = "pnlEncabezado";
+            this.pnlEncabezado.Controls.Add(this.lblTituloForm);
+
+            // lblTituloForm
+            this.lblTituloForm.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblTituloForm.ForeColor = System.Drawing.Color.White;
+            this.lblTituloForm.Font = new System.Drawing.Font("Segoe UI Semibold", 12f);
+            this.lblTituloForm.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblTituloForm.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.lblTituloForm.Text = "Devoluciones";
+            this.lblTituloForm.Name = "lblTituloForm";
 
             // pnlVentaOrigen
             this.pnlVentaOrigen.Controls.Add(this.txtBuscarVenta);
@@ -71,11 +92,11 @@ namespace ElectroJoule.UI
             this.dgvItems.AllowUserToAddRows = false;
             this.dgvItems.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvItems.Name = "dgvItems";
-            var colDevolver = new System.Windows.Forms.DataGridViewCheckBoxColumn { Name = "colDevolver", HeaderText = "Devolver", DataPropertyName = "Devolver" };
-            var colComp = new System.Windows.Forms.DataGridViewTextBoxColumn { Name = "colComponente", HeaderText = "Componente", DataPropertyName = "Componente", ReadOnly = true };
-            var colCantVend = new System.Windows.Forms.DataGridViewTextBoxColumn { Name = "colCantVendida", HeaderText = "Cant. vendida", DataPropertyName = "CantidadVendida", ReadOnly = true };
-            var colCantDev = new System.Windows.Forms.DataGridViewTextBoxColumn { Name = "colCantDevolver", HeaderText = "Cant. a devolver", DataPropertyName = "CantidadDevolver", ReadOnly = false };
-            var colSub = new System.Windows.Forms.DataGridViewTextBoxColumn { Name = "colSubtotal", HeaderText = "Subtotal", DataPropertyName = "Subtotal", ReadOnly = true };
+            System.Windows.Forms.DataGridViewCheckBoxColumn colDevolver = new System.Windows.Forms.DataGridViewCheckBoxColumn { Name = "colDevolver", HeaderText = "Devolver", DataPropertyName = "Devolver" };
+            System.Windows.Forms.DataGridViewTextBoxColumn colComp = new System.Windows.Forms.DataGridViewTextBoxColumn { Name = "colComponente", HeaderText = "Componente", DataPropertyName = "Componente", ReadOnly = true };
+            System.Windows.Forms.DataGridViewTextBoxColumn colCantVend = new System.Windows.Forms.DataGridViewTextBoxColumn { Name = "colCantVendida", HeaderText = "Cant. vendida", DataPropertyName = "CantidadVendida", ReadOnly = true };
+            System.Windows.Forms.DataGridViewTextBoxColumn colCantDev = new System.Windows.Forms.DataGridViewTextBoxColumn { Name = "colCantDevolver", HeaderText = "Cant. a devolver", DataPropertyName = "CantidadDevolver", ReadOnly = false };
+            System.Windows.Forms.DataGridViewTextBoxColumn colSub = new System.Windows.Forms.DataGridViewTextBoxColumn { Name = "colSubtotal", HeaderText = "Subtotal", DataPropertyName = "Subtotal", ReadOnly = true };
             this.dgvItems.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] { colDevolver, colComp, colCantVend, colCantDev, colSub });
 
             // pnlMotivo
@@ -118,6 +139,7 @@ namespace ElectroJoule.UI
 
             // frmDevoluciones
             this.ClientSize = new System.Drawing.Size(880, 600);
+            this.Controls.Add(this.pnlEncabezado);
             this.Controls.Add(this.dgvItems);
             this.Controls.Add(this.pnlMotivo);
             this.Controls.Add(this.pnlVentaOrigen);
@@ -129,6 +151,7 @@ namespace ElectroJoule.UI
             ((System.ComponentModel.ISupportInitialize)(this.dgvItems)).EndInit();
             this.pnlMotivo.ResumeLayout(false);
             this.pnlMotivo.PerformLayout();
+            this.pnlEncabezado.ResumeLayout(false);
             this.ResumeLayout(false);
         }
     }

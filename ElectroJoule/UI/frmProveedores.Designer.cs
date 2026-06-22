@@ -3,6 +3,8 @@ namespace ElectroJoule.UI
     partial class frmProveedores
     {
         private System.ComponentModel.IContainer components = null;
+        private System.Windows.Forms.Panel pnlEncabezado;
+        private System.Windows.Forms.Label lblTituloForm;
         private System.Windows.Forms.Panel pnlFiltros;
         private System.Windows.Forms.TextBox txtBuscar;
         private System.Windows.Forms.Button btnBuscar;
@@ -44,7 +46,26 @@ namespace ElectroJoule.UI
             this.pnlFiltros.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)this.dgvProveedores).BeginInit();
             this.grpDatos.SuspendLayout();
+            this.pnlEncabezado = new System.Windows.Forms.Panel();
+            this.lblTituloForm = new System.Windows.Forms.Label();
+            this.pnlEncabezado.SuspendLayout();
             this.SuspendLayout();
+
+            // pnlEncabezado
+            this.pnlEncabezado.BackColor = System.Drawing.Color.FromArgb(46, 117, 182);
+            this.pnlEncabezado.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlEncabezado.Height = 40;
+            this.pnlEncabezado.Name = "pnlEncabezado";
+            this.pnlEncabezado.Controls.Add(this.lblTituloForm);
+
+            // lblTituloForm
+            this.lblTituloForm.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblTituloForm.ForeColor = System.Drawing.Color.White;
+            this.lblTituloForm.Font = new System.Drawing.Font("Segoe UI Semibold", 12f);
+            this.lblTituloForm.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblTituloForm.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.lblTituloForm.Text = "Gestión de Proveedores";
+            this.lblTituloForm.Name = "lblTituloForm";
 
             // pnlFiltros
             this.pnlFiltros.Dock = System.Windows.Forms.DockStyle.Top; this.pnlFiltros.Height = 48;
@@ -60,7 +81,7 @@ namespace ElectroJoule.UI
             this.dgvProveedores.AllowUserToAddRows = false; this.dgvProveedores.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvProveedores.MultiSelect = false; System.Windows.Forms.DataGridViewCellStyle dgvProveedoresAltStyle = new System.Windows.Forms.DataGridViewCellStyle();
             dgvProveedoresAltStyle.BackColor = System.Drawing.Color.FromArgb(234, 241, 250);
-            this.dgvProveedores.AlternatingRowsDefaultCellStyle = dgvProveedoresAltStyle
+            this.dgvProveedores.AlternatingRowsDefaultCellStyle = dgvProveedoresAltStyle;
             this.dgvProveedores.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
                 new System.Windows.Forms.DataGridViewTextBoxColumn { Name = "colId", HeaderText = "Id" },
                 new System.Windows.Forms.DataGridViewTextBoxColumn { Name = "colNombre", HeaderText = "Nombre" },
@@ -100,6 +121,7 @@ namespace ElectroJoule.UI
 
             // frmProveedores
             this.Text = "Proveedores"; this.ClientSize = new System.Drawing.Size(860, 540);
+            this.Controls.Add(this.pnlEncabezado);
             this.Controls.Add(this.dgvProveedores);
             this.Controls.Add(this.grpDatos);
             this.Controls.Add(this.pnlFiltros);
@@ -110,6 +132,7 @@ namespace ElectroJoule.UI
             this.pnlFiltros.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)this.dgvProveedores).EndInit();
             this.grpDatos.ResumeLayout(false);
+            this.pnlEncabezado.ResumeLayout(false);
             this.ResumeLayout(false);
         }
     }

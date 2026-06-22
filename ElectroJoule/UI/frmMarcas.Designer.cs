@@ -3,6 +3,8 @@ namespace ElectroJoule.UI
     partial class frmMarcas
     {
         private System.ComponentModel.IContainer components = null;
+        private System.Windows.Forms.Panel pnlEncabezado;
+        private System.Windows.Forms.Label lblTituloForm;
         private System.Windows.Forms.DataGridView dgvMarcas;
         private System.Windows.Forms.GroupBox grpDatos;
         private System.Windows.Forms.Label lblNombreMarca;
@@ -32,7 +34,26 @@ namespace ElectroJoule.UI
             this.btnEliminar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMarcas)).BeginInit();
             this.grpDatos.SuspendLayout();
+            this.pnlEncabezado = new System.Windows.Forms.Panel();
+            this.lblTituloForm = new System.Windows.Forms.Label();
+            this.pnlEncabezado.SuspendLayout();
             this.SuspendLayout();
+
+            // pnlEncabezado
+            this.pnlEncabezado.BackColor = System.Drawing.Color.FromArgb(46, 117, 182);
+            this.pnlEncabezado.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlEncabezado.Height = 40;
+            this.pnlEncabezado.Name = "pnlEncabezado";
+            this.pnlEncabezado.Controls.Add(this.lblTituloForm);
+
+            // lblTituloForm
+            this.lblTituloForm.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblTituloForm.ForeColor = System.Drawing.Color.White;
+            this.lblTituloForm.Font = new System.Drawing.Font("Segoe UI Semibold", 12f);
+            this.lblTituloForm.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblTituloForm.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.lblTituloForm.Text = "Gestión de Marcas";
+            this.lblTituloForm.Name = "lblTituloForm";
 
             // dgvMarcas
             this.dgvMarcas.Location = new System.Drawing.Point(8, 48);
@@ -44,9 +65,9 @@ namespace ElectroJoule.UI
             this.dgvMarcas.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvMarcas.Name = "dgvMarcas";
             this.dgvMarcas.SelectionChanged += new System.EventHandler(this.dgvMarcas_SelectionChanged);
-            var colId = new System.Windows.Forms.DataGridViewTextBoxColumn { Name = "colId", HeaderText = "Id", DataPropertyName = "Id" };
-            var colNombre = new System.Windows.Forms.DataGridViewTextBoxColumn { Name = "colNombre", HeaderText = "Nombre", DataPropertyName = "Nombre" };
-            var colOrigen = new System.Windows.Forms.DataGridViewTextBoxColumn { Name = "colOrigen", HeaderText = "Origen", DataPropertyName = "Origen" };
+            System.Windows.Forms.DataGridViewTextBoxColumn colId = new System.Windows.Forms.DataGridViewTextBoxColumn { Name = "colId", HeaderText = "Id", DataPropertyName = "Id" };
+            System.Windows.Forms.DataGridViewTextBoxColumn colNombre = new System.Windows.Forms.DataGridViewTextBoxColumn { Name = "colNombre", HeaderText = "Nombre", DataPropertyName = "Nombre" };
+            System.Windows.Forms.DataGridViewTextBoxColumn colOrigen = new System.Windows.Forms.DataGridViewTextBoxColumn { Name = "colOrigen", HeaderText = "Origen", DataPropertyName = "Origen" };
             this.dgvMarcas.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] { colId, colNombre, colOrigen });
 
             // grpDatos
@@ -108,6 +129,7 @@ namespace ElectroJoule.UI
 
             // frmMarcas
             this.ClientSize = new System.Drawing.Size(700, 460);
+            this.Controls.Add(this.pnlEncabezado);
             this.Controls.Add(this.dgvMarcas);
             this.Controls.Add(this.grpDatos);
             this.Controls.Add(this.btnNuevo);
@@ -119,6 +141,7 @@ namespace ElectroJoule.UI
             ((System.ComponentModel.ISupportInitialize)(this.dgvMarcas)).EndInit();
             this.grpDatos.ResumeLayout(false);
             this.grpDatos.PerformLayout();
+            this.pnlEncabezado.ResumeLayout(false);
             this.ResumeLayout(false);
         }
     }

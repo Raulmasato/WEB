@@ -3,6 +3,8 @@ namespace ElectroJoule.UI
     partial class frmComponentes
     {
         private System.ComponentModel.IContainer components = null;
+        private System.Windows.Forms.Panel pnlEncabezado;
+        private System.Windows.Forms.Label lblTituloForm;
         private System.Windows.Forms.Panel pnlFiltros;
         private System.Windows.Forms.TextBox txtBuscar;
         private System.Windows.Forms.ComboBox cboCategoria;
@@ -75,7 +77,26 @@ namespace ElectroJoule.UI
             this.pnlEdicion.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numPrecio)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numStock)).BeginInit();
+            this.pnlEncabezado = new System.Windows.Forms.Panel();
+            this.lblTituloForm = new System.Windows.Forms.Label();
+            this.pnlEncabezado.SuspendLayout();
             this.SuspendLayout();
+
+            // pnlEncabezado
+            this.pnlEncabezado.BackColor = System.Drawing.Color.FromArgb(46, 117, 182);
+            this.pnlEncabezado.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlEncabezado.Height = 40;
+            this.pnlEncabezado.Name = "pnlEncabezado";
+            this.pnlEncabezado.Controls.Add(this.lblTituloForm);
+
+            // lblTituloForm
+            this.lblTituloForm.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblTituloForm.ForeColor = System.Drawing.Color.White;
+            this.lblTituloForm.Font = new System.Drawing.Font("Segoe UI Semibold", 12f);
+            this.lblTituloForm.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblTituloForm.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.lblTituloForm.Text = "Gestión de Componentes";
+            this.lblTituloForm.Name = "lblTituloForm";
 
             // pnlFiltros
             this.pnlFiltros.Controls.Add(this.txtBuscar);
@@ -136,12 +157,12 @@ namespace ElectroJoule.UI
             this.dgvComponentes.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvComponentes.Name = "dgvComponentes";
             this.dgvComponentes.SelectionChanged += new System.EventHandler(this.dgvComponentes_SelectionChanged);
-            var colCodigo = new System.Windows.Forms.DataGridViewTextBoxColumn { Name = "colCodigo", HeaderText = "Código", DataPropertyName = "Codigo" };
-            var colNombreC = new System.Windows.Forms.DataGridViewTextBoxColumn { Name = "colNombre", HeaderText = "Nombre", DataPropertyName = "Nombre" };
-            var colCategoria = new System.Windows.Forms.DataGridViewTextBoxColumn { Name = "colCategoria", HeaderText = "Categoría", DataPropertyName = "Categoria" };
-            var colMarca = new System.Windows.Forms.DataGridViewTextBoxColumn { Name = "colMarca", HeaderText = "Marca", DataPropertyName = "Marca" };
-            var colPrecio = new System.Windows.Forms.DataGridViewTextBoxColumn { Name = "colPrecio", HeaderText = "Precio", DataPropertyName = "Precio" };
-            var colStock = new System.Windows.Forms.DataGridViewTextBoxColumn { Name = "colStock", HeaderText = "Stock", DataPropertyName = "Stock" };
+            System.Windows.Forms.DataGridViewTextBoxColumn colCodigo = new System.Windows.Forms.DataGridViewTextBoxColumn { Name = "colCodigo", HeaderText = "Código", DataPropertyName = "Codigo" };
+            System.Windows.Forms.DataGridViewTextBoxColumn colNombreC = new System.Windows.Forms.DataGridViewTextBoxColumn { Name = "colNombre", HeaderText = "Nombre", DataPropertyName = "Nombre" };
+            System.Windows.Forms.DataGridViewTextBoxColumn colCategoria = new System.Windows.Forms.DataGridViewTextBoxColumn { Name = "colCategoria", HeaderText = "Categoría", DataPropertyName = "Categoria" };
+            System.Windows.Forms.DataGridViewTextBoxColumn colMarca = new System.Windows.Forms.DataGridViewTextBoxColumn { Name = "colMarca", HeaderText = "Marca", DataPropertyName = "Marca" };
+            System.Windows.Forms.DataGridViewTextBoxColumn colPrecio = new System.Windows.Forms.DataGridViewTextBoxColumn { Name = "colPrecio", HeaderText = "Precio", DataPropertyName = "Precio" };
+            System.Windows.Forms.DataGridViewTextBoxColumn colStock = new System.Windows.Forms.DataGridViewTextBoxColumn { Name = "colStock", HeaderText = "Stock", DataPropertyName = "Stock" };
             this.dgvComponentes.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] { colCodigo, colNombreC, colCategoria, colMarca, colPrecio, colStock });
 
             // pnlEdicion (Panel2 of split)
@@ -289,6 +310,7 @@ namespace ElectroJoule.UI
 
             // frmComponentes
             this.ClientSize = new System.Drawing.Size(900, 600);
+            this.Controls.Add(this.pnlEncabezado);
             this.Controls.Add(this.splitPrincipal);
             this.Controls.Add(this.pnlFiltros);
             this.Name = "frmComponentes";
@@ -304,6 +326,7 @@ namespace ElectroJoule.UI
             this.pnlEdicion.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numPrecio)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numStock)).EndInit();
+            this.pnlEncabezado.ResumeLayout(false);
             this.ResumeLayout(false);
         }
     }
