@@ -56,7 +56,7 @@ namespace ElectroJoule.UI
             this.pnlFiltros.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlFiltros.Height = 48;
             this.pnlFiltros.Padding = new System.Windows.Forms.Padding(6, 8, 6, 8);
-            this.txtBuscar.Location = new System.Drawing.Point(6, 12); this.txtBuscar.Size = new System.Drawing.Size(240, 23); this.txtBuscar.PlaceholderText = "Nombre o CUIT";
+            this.txtBuscar.Location = new System.Drawing.Point(6, 12); this.txtBuscar.Size = new System.Drawing.Size(240, 23);
             this.btnBuscar.Location = new System.Drawing.Point(254, 10); this.btnBuscar.Size = new System.Drawing.Size(80, 27); this.btnBuscar.Text = "Buscar";
             this.btnBuscar.BackColor = System.Drawing.ColorTranslator.FromHtml("#2E75B6"); this.btnBuscar.ForeColor = System.Drawing.Color.White; this.btnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
