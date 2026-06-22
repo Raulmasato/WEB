@@ -282,7 +282,7 @@ namespace ElectroJoule.UI
             this.tslEstadoConexion.Text = "Conectado";
 
             // frmPrincipal
-            this.BackColor = System.Drawing.ColorTranslator.FromHtml("#F5F7FA");
+            this.BackColor = System.Drawing.Color.FromArgb(245, 247, 250);
             this.ClientSize = new System.Drawing.Size(1280, 720);
             this.Controls.Add(this.msPrincipal);
             this.Controls.Add(this.tsPrincipal);

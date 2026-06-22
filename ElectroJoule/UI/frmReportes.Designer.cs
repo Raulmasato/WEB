@@ -119,7 +119,7 @@ namespace ElectroJoule.UI
             this.lblComponenteV.Text = "Componente:"; this.lblComponenteV.Location = new System.Drawing.Point(538, 14); this.lblComponenteV.AutoSize = true;
             this.cboComponenteV.Location = new System.Drawing.Point(620, 10); this.cboComponenteV.Size = new System.Drawing.Size(130, 23); this.cboComponenteV.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.btnGenerarVentas.Text = "Generar"; this.btnGenerarVentas.Location = new System.Drawing.Point(758, 10); this.btnGenerarVentas.Size = new System.Drawing.Size(80, 27);
-            this.btnGenerarVentas.BackColor = System.Drawing.ColorTranslator.FromHtml("#2E75B6"); this.btnGenerarVentas.ForeColor = System.Drawing.Color.White; this.btnGenerarVentas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGenerarVentas.BackColor = System.Drawing.Color.FromArgb(46, 117, 182); this.btnGenerarVentas.ForeColor = System.Drawing.Color.White; this.btnGenerarVentas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnGenerarVentas.Click += new System.EventHandler(this.btnGenerarVentas_Click);
             this.pnlFiltrosVentas.Controls.AddRange(new System.Windows.Forms.Control[] {
                 this.lblDesdeVentas, this.dtpDesdeVentas, this.lblHastaVentas, this.dtpHastaVentas,
@@ -128,7 +128,9 @@ namespace ElectroJoule.UI
             this.dgvVentas.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvVentas.ReadOnly = true; this.dgvVentas.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvVentas.AllowUserToAddRows = false; this.dgvVentas.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgvVentas.AlternatingRowsDefaultCellStyle.BackColor = System.Drawing.ColorTranslator.FromHtml("#EAF1FA");
+            System.Windows.Forms.DataGridViewCellStyle dgvVentasAltStyle = new System.Windows.Forms.DataGridViewCellStyle();
+            dgvVentasAltStyle.BackColor = System.Drawing.Color.FromArgb(234, 241, 250);
+            this.dgvVentas.AlternatingRowsDefaultCellStyle = dgvVentasAltStyle
             this.dgvVentas.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
                 new System.Windows.Forms.DataGridViewTextBoxColumn { Name = "colFecha", HeaderText = "Fecha" },
                 new System.Windows.Forms.DataGridViewTextBoxColumn { Name = "colCliente", HeaderText = "Cliente" },
@@ -140,7 +142,7 @@ namespace ElectroJoule.UI
             this.btnExportarPdfVentas.Text = "Exportar PDF"; this.btnExportarPdfVentas.Size = new System.Drawing.Size(110, 27);
             this.btnExportarPdfVentas.Anchor = System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right;
             this.btnExportarPdfVentas.Location = new System.Drawing.Point(640, 6);
-            this.btnExportarPdfVentas.BackColor = System.Drawing.ColorTranslator.FromHtml("#2E75B6"); this.btnExportarPdfVentas.ForeColor = System.Drawing.Color.White; this.btnExportarPdfVentas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnExportarPdfVentas.BackColor = System.Drawing.Color.FromArgb(46, 117, 182); this.btnExportarPdfVentas.ForeColor = System.Drawing.Color.White; this.btnExportarPdfVentas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnExportarPdfVentas.Click += new System.EventHandler(this.btnExportarPdfVentas_Click);
             this.btnExportarExcelVentas.Text = "Exportar Excel"; this.btnExportarExcelVentas.Size = new System.Drawing.Size(110, 27);
             this.btnExportarExcelVentas.Anchor = System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right;
@@ -166,7 +168,7 @@ namespace ElectroJoule.UI
             this.cboTipoMovimiento.Location = new System.Drawing.Point(610, 10); this.cboTipoMovimiento.Size = new System.Drawing.Size(120, 23); this.cboTipoMovimiento.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboTipoMovimiento.Items.AddRange(new object[] { "entrada", "salida", "ajuste" });
             this.btnGenerarInventario.Text = "Generar"; this.btnGenerarInventario.Location = new System.Drawing.Point(738, 10); this.btnGenerarInventario.Size = new System.Drawing.Size(80, 27);
-            this.btnGenerarInventario.BackColor = System.Drawing.ColorTranslator.FromHtml("#2E75B6"); this.btnGenerarInventario.ForeColor = System.Drawing.Color.White; this.btnGenerarInventario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGenerarInventario.BackColor = System.Drawing.Color.FromArgb(46, 117, 182); this.btnGenerarInventario.ForeColor = System.Drawing.Color.White; this.btnGenerarInventario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnGenerarInventario.Click += new System.EventHandler(this.btnGenerarInventario_Click);
             this.pnlFiltrosInv.Controls.AddRange(new System.Windows.Forms.Control[] {
                 this.lblDesdeInv, this.dtpDesdeInv, this.lblHastaInv, this.dtpHastaInv,
@@ -175,7 +177,9 @@ namespace ElectroJoule.UI
             this.dgvMovimientos.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvMovimientos.ReadOnly = true; this.dgvMovimientos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvMovimientos.AllowUserToAddRows = false; this.dgvMovimientos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgvMovimientos.AlternatingRowsDefaultCellStyle.BackColor = System.Drawing.ColorTranslator.FromHtml("#EAF1FA");
+            System.Windows.Forms.DataGridViewCellStyle dgvMovimientosAltStyle = new System.Windows.Forms.DataGridViewCellStyle();
+            dgvMovimientosAltStyle.BackColor = System.Drawing.Color.FromArgb(234, 241, 250);
+            this.dgvMovimientos.AlternatingRowsDefaultCellStyle = dgvMovimientosAltStyle
             this.dgvMovimientos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
                 new System.Windows.Forms.DataGridViewTextBoxColumn { Name = "colFecha", HeaderText = "Fecha" },
                 new System.Windows.Forms.DataGridViewTextBoxColumn { Name = "colTipo", HeaderText = "Tipo" },
@@ -188,7 +192,7 @@ namespace ElectroJoule.UI
             this.btnExportarPdfInventario.Text = "Exportar PDF"; this.btnExportarPdfInventario.Size = new System.Drawing.Size(110, 27);
             this.btnExportarPdfInventario.Anchor = System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right;
             this.btnExportarPdfInventario.Location = new System.Drawing.Point(640, 6);
-            this.btnExportarPdfInventario.BackColor = System.Drawing.ColorTranslator.FromHtml("#2E75B6"); this.btnExportarPdfInventario.ForeColor = System.Drawing.Color.White; this.btnExportarPdfInventario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnExportarPdfInventario.BackColor = System.Drawing.Color.FromArgb(46, 117, 182); this.btnExportarPdfInventario.ForeColor = System.Drawing.Color.White; this.btnExportarPdfInventario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnExportarPdfInventario.Click += new System.EventHandler(this.btnExportarPdfInventario_Click);
             this.btnExportarExcelInventario.Text = "Exportar Excel"; this.btnExportarExcelInventario.Size = new System.Drawing.Size(110, 27);
             this.btnExportarExcelInventario.Anchor = System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right;
@@ -203,7 +207,7 @@ namespace ElectroJoule.UI
             // ── tabEstadisticas ──
             this.tabEstadisticas.Text = "Dashboard"; this.tabEstadisticas.Padding = new System.Windows.Forms.Padding(4);
 
-            this.pnlKpis.Dock = System.Windows.Forms.DockStyle.Top; this.pnlKpis.Height = 80; this.pnlKpis.BackColor = System.Drawing.ColorTranslator.FromHtml("#BDD7EE");
+            this.pnlKpis.Dock = System.Windows.Forms.DockStyle.Top; this.pnlKpis.Height = 80; this.pnlKpis.BackColor = System.Drawing.Color.FromArgb(189, 215, 238);
             this.lblVentasMes.Text = "Ventas del mes: —"; this.lblVentasMes.Location = new System.Drawing.Point(20, 15); this.lblVentasMes.AutoSize = true; this.lblVentasMes.Font = new System.Drawing.Font("Segoe UI Semibold", 11f);
             this.lblTicketPromedio.Text = "Ticket promedio: —"; this.lblTicketPromedio.Location = new System.Drawing.Point(220, 15); this.lblTicketPromedio.AutoSize = true; this.lblTicketPromedio.Font = new System.Drawing.Font("Segoe UI Semibold", 11f);
             this.lblStockCritico.Text = "Stock crítico: —"; this.lblStockCritico.Location = new System.Drawing.Point(440, 15); this.lblStockCritico.AutoSize = true; this.lblStockCritico.Font = new System.Drawing.Font("Segoe UI Semibold", 11f);
@@ -213,7 +217,7 @@ namespace ElectroJoule.UI
             this.pnlGraficoPlaceholder.Dock = System.Windows.Forms.DockStyle.Fill; this.pnlGraficoPlaceholder.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lblGraficoTodo.Text = "Gráfico de ventas (System.Windows.Forms.DataVisualization.Charting.Chart) — // TODO";
             this.lblGraficoTodo.Dock = System.Windows.Forms.DockStyle.Fill; this.lblGraficoTodo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblGraficoTodo.Font = new System.Drawing.Font("Segoe UI Semibold", 11f); this.lblGraficoTodo.ForeColor = System.Drawing.ColorTranslator.FromHtml("#1F4E79");
+            this.lblGraficoTodo.Font = new System.Drawing.Font("Segoe UI Semibold", 11f); this.lblGraficoTodo.ForeColor = System.Drawing.Color.FromArgb(31, 78, 121);
             this.pnlGraficoPlaceholder.Controls.Add(this.lblGraficoTodo);
 
             this.tabEstadisticas.Controls.Add(this.pnlGraficoPlaceholder);

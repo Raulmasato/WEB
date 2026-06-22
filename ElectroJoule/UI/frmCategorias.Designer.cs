@@ -93,7 +93,7 @@ namespace ElectroJoule.UI
             this.btnGuardar.Size = new System.Drawing.Size(80, 28);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Text = "Guardar";
-            this.btnGuardar.BackColor = System.Drawing.ColorTranslator.FromHtml("#2E75B6");
+            this.btnGuardar.BackColor = System.Drawing.Color.FromArgb(46, 117, 182);
             this.btnGuardar.ForeColor = System.Drawing.Color.White;
             this.btnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnGuardar.Anchor = System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right;
