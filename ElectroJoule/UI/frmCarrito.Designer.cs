@@ -3,6 +3,8 @@ namespace ElectroJoule.UI
     partial class frmCarrito
     {
         private System.ComponentModel.IContainer components = null;
+        private System.Windows.Forms.Panel pnlEncabezado;
+        private System.Windows.Forms.Label lblTituloForm;
         private System.Windows.Forms.DataGridView dgvCarrito;
         private System.Windows.Forms.Panel pnlTotales;
         private System.Windows.Forms.Label lblTotalLabel;
@@ -28,7 +30,26 @@ namespace ElectroJoule.UI
             this.btnConfirmarCompra = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCarrito)).BeginInit();
             this.pnlTotales.SuspendLayout();
+            this.pnlEncabezado = new System.Windows.Forms.Panel();
+            this.lblTituloForm = new System.Windows.Forms.Label();
+            this.pnlEncabezado.SuspendLayout();
             this.SuspendLayout();
+
+            // pnlEncabezado
+            this.pnlEncabezado.BackColor = System.Drawing.Color.FromArgb(46, 117, 182);
+            this.pnlEncabezado.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlEncabezado.Height = 40;
+            this.pnlEncabezado.Name = "pnlEncabezado";
+            this.pnlEncabezado.Controls.Add(this.lblTituloForm);
+
+            // lblTituloForm
+            this.lblTituloForm.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblTituloForm.ForeColor = System.Drawing.Color.White;
+            this.lblTituloForm.Font = new System.Drawing.Font("Segoe UI Semibold", 12f);
+            this.lblTituloForm.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblTituloForm.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.lblTituloForm.Text = "Carrito de Compras";
+            this.lblTituloForm.Name = "lblTituloForm";
 
             // dgvCarrito
             this.dgvCarrito.Location = new System.Drawing.Point(0, 40);
@@ -39,11 +60,11 @@ namespace ElectroJoule.UI
             this.dgvCarrito.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvCarrito.Name = "dgvCarrito";
             this.dgvCarrito.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvCarrito_CellClick);
-            var colComponente = new System.Windows.Forms.DataGridViewTextBoxColumn { Name = "colComponente", HeaderText = "Componente", DataPropertyName = "Componente", ReadOnly = true };
-            var colPrecioUnit = new System.Windows.Forms.DataGridViewTextBoxColumn { Name = "colPrecioUnit", HeaderText = "Precio unit.", DataPropertyName = "PrecioUnitario", ReadOnly = true };
-            var colCantidad = new System.Windows.Forms.DataGridViewTextBoxColumn { Name = "colCantidad", HeaderText = "Cantidad", DataPropertyName = "Cantidad", ReadOnly = false };
-            var colSubtotal = new System.Windows.Forms.DataGridViewTextBoxColumn { Name = "colSubtotal", HeaderText = "Subtotal", DataPropertyName = "Subtotal", ReadOnly = true };
-            var colQuitar = new System.Windows.Forms.DataGridViewButtonColumn { Name = "colQuitar", HeaderText = "Quitar", Text = "X", UseColumnTextForButtonValue = true };
+            System.Windows.Forms.DataGridViewTextBoxColumn colComponente = new System.Windows.Forms.DataGridViewTextBoxColumn { Name = "colComponente", HeaderText = "Componente", DataPropertyName = "Componente", ReadOnly = true };
+            System.Windows.Forms.DataGridViewTextBoxColumn colPrecioUnit = new System.Windows.Forms.DataGridViewTextBoxColumn { Name = "colPrecioUnit", HeaderText = "Precio unit.", DataPropertyName = "PrecioUnitario", ReadOnly = true };
+            System.Windows.Forms.DataGridViewTextBoxColumn colCantidad = new System.Windows.Forms.DataGridViewTextBoxColumn { Name = "colCantidad", HeaderText = "Cantidad", DataPropertyName = "Cantidad", ReadOnly = false };
+            System.Windows.Forms.DataGridViewTextBoxColumn colSubtotal = new System.Windows.Forms.DataGridViewTextBoxColumn { Name = "colSubtotal", HeaderText = "Subtotal", DataPropertyName = "Subtotal", ReadOnly = true };
+            System.Windows.Forms.DataGridViewButtonColumn colQuitar = new System.Windows.Forms.DataGridViewButtonColumn { Name = "colQuitar", HeaderText = "Quitar", Text = "X", UseColumnTextForButtonValue = true };
             this.dgvCarrito.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] { colComponente, colPrecioUnit, colCantidad, colSubtotal, colQuitar });
 
             // pnlTotales
@@ -99,6 +120,7 @@ namespace ElectroJoule.UI
 
             // frmCarrito
             this.ClientSize = new System.Drawing.Size(820, 560);
+            this.Controls.Add(this.pnlEncabezado);
             this.Controls.Add(this.dgvCarrito);
             this.Controls.Add(this.pnlTotales);
             this.Name = "frmCarrito";
@@ -107,6 +129,7 @@ namespace ElectroJoule.UI
             ((System.ComponentModel.ISupportInitialize)(this.dgvCarrito)).EndInit();
             this.pnlTotales.ResumeLayout(false);
             this.pnlTotales.PerformLayout();
+            this.pnlEncabezado.ResumeLayout(false);
             this.ResumeLayout(false);
         }
     }

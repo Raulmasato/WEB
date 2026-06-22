@@ -61,10 +61,10 @@ namespace ElectroJoule.UI
             this.dgvDetalle.AllowUserToAddRows = false;
             this.dgvDetalle.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvDetalle.Name = "dgvDetalle";
-            var colComp = new System.Windows.Forms.DataGridViewTextBoxColumn { Name = "colComponente", HeaderText = "Componente", DataPropertyName = "Componente" };
-            var colCant = new System.Windows.Forms.DataGridViewTextBoxColumn { Name = "colCantidad", HeaderText = "Cantidad", DataPropertyName = "Cantidad" };
-            var colPrecUnit = new System.Windows.Forms.DataGridViewTextBoxColumn { Name = "colPrecioUnit", HeaderText = "Precio unit.", DataPropertyName = "PrecioUnitario" };
-            var colSub = new System.Windows.Forms.DataGridViewTextBoxColumn { Name = "colSubtotal", HeaderText = "Subtotal", DataPropertyName = "Subtotal" };
+            System.Windows.Forms.DataGridViewTextBoxColumn colComp = new System.Windows.Forms.DataGridViewTextBoxColumn { Name = "colComponente", HeaderText = "Componente", DataPropertyName = "Componente" };
+            System.Windows.Forms.DataGridViewTextBoxColumn colCant = new System.Windows.Forms.DataGridViewTextBoxColumn { Name = "colCantidad", HeaderText = "Cantidad", DataPropertyName = "Cantidad" };
+            System.Windows.Forms.DataGridViewTextBoxColumn colPrecUnit = new System.Windows.Forms.DataGridViewTextBoxColumn { Name = "colPrecioUnit", HeaderText = "Precio unit.", DataPropertyName = "PrecioUnitario" };
+            System.Windows.Forms.DataGridViewTextBoxColumn colSub = new System.Windows.Forms.DataGridViewTextBoxColumn { Name = "colSubtotal", HeaderText = "Subtotal", DataPropertyName = "Subtotal" };
             this.dgvDetalle.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] { colComp, colCant, colPrecUnit, colSub });
 
             // pnlPie

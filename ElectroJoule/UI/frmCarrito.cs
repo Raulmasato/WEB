@@ -3,7 +3,7 @@ using System.Windows.Forms;
 
 namespace ElectroJoule.UI
 {
-    public partial class frmCarrito : frmBaseHijo
+    public partial class frmCarrito : System.Windows.Forms.Form
     {
         public frmCarrito()
         {

@@ -3,6 +3,8 @@ namespace ElectroJoule.UI
     partial class frmPedidos
     {
         private System.ComponentModel.IContainer components = null;
+        private System.Windows.Forms.Panel pnlEncabezado;
+        private System.Windows.Forms.Label lblTituloForm;
         private System.Windows.Forms.Panel pnlFiltros;
         private System.Windows.Forms.ComboBox cboEstado;
         private System.Windows.Forms.DateTimePicker dtpDesde;
@@ -51,7 +53,26 @@ namespace ElectroJoule.UI
             this.grpDetalle.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDetallePedido)).BeginInit();
             this.pnlAcciones.SuspendLayout();
+            this.pnlEncabezado = new System.Windows.Forms.Panel();
+            this.lblTituloForm = new System.Windows.Forms.Label();
+            this.pnlEncabezado.SuspendLayout();
             this.SuspendLayout();
+
+            // pnlEncabezado
+            this.pnlEncabezado.BackColor = System.Drawing.Color.FromArgb(46, 117, 182);
+            this.pnlEncabezado.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlEncabezado.Height = 40;
+            this.pnlEncabezado.Name = "pnlEncabezado";
+            this.pnlEncabezado.Controls.Add(this.lblTituloForm);
+
+            // lblTituloForm
+            this.lblTituloForm.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblTituloForm.ForeColor = System.Drawing.Color.White;
+            this.lblTituloForm.Font = new System.Drawing.Font("Segoe UI Semibold", 12f);
+            this.lblTituloForm.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblTituloForm.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.lblTituloForm.Text = "Gestión de Pedidos";
+            this.lblTituloForm.Name = "lblTituloForm";
 
             // pnlFiltros
             this.pnlFiltros.Controls.Add(this.cboEstado);
@@ -120,11 +141,11 @@ namespace ElectroJoule.UI
             this.dgvPedidos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvPedidos.Name = "dgvPedidos";
             this.dgvPedidos.SelectionChanged += new System.EventHandler(this.dgvPedidos_SelectionChanged);
-            var colNum = new System.Windows.Forms.DataGridViewTextBoxColumn { Name = "colNum", HeaderText = "Nº", DataPropertyName = "Numero" };
-            var colFecha = new System.Windows.Forms.DataGridViewTextBoxColumn { Name = "colFecha", HeaderText = "Fecha", DataPropertyName = "Fecha" };
-            var colCliente = new System.Windows.Forms.DataGridViewTextBoxColumn { Name = "colCliente", HeaderText = "Cliente", DataPropertyName = "Cliente" };
-            var colEstado = new System.Windows.Forms.DataGridViewTextBoxColumn { Name = "colEstado", HeaderText = "Estado", DataPropertyName = "Estado" };
-            var colTotal = new System.Windows.Forms.DataGridViewTextBoxColumn { Name = "colTotal", HeaderText = "Total", DataPropertyName = "Total" };
+            System.Windows.Forms.DataGridViewTextBoxColumn colNum = new System.Windows.Forms.DataGridViewTextBoxColumn { Name = "colNum", HeaderText = "Nº", DataPropertyName = "Numero" };
+            System.Windows.Forms.DataGridViewTextBoxColumn colFecha = new System.Windows.Forms.DataGridViewTextBoxColumn { Name = "colFecha", HeaderText = "Fecha", DataPropertyName = "Fecha" };
+            System.Windows.Forms.DataGridViewTextBoxColumn colCliente = new System.Windows.Forms.DataGridViewTextBoxColumn { Name = "colCliente", HeaderText = "Cliente", DataPropertyName = "Cliente" };
+            System.Windows.Forms.DataGridViewTextBoxColumn colEstado = new System.Windows.Forms.DataGridViewTextBoxColumn { Name = "colEstado", HeaderText = "Estado", DataPropertyName = "Estado" };
+            System.Windows.Forms.DataGridViewTextBoxColumn colTotal = new System.Windows.Forms.DataGridViewTextBoxColumn { Name = "colTotal", HeaderText = "Total", DataPropertyName = "Total" };
             this.dgvPedidos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] { colNum, colFecha, colCliente, colEstado, colTotal });
 
             // grpDetalle
@@ -140,9 +161,9 @@ namespace ElectroJoule.UI
             this.dgvDetallePedido.AllowUserToAddRows = false;
             this.dgvDetallePedido.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvDetallePedido.Name = "dgvDetallePedido";
-            var colCompDet = new System.Windows.Forms.DataGridViewTextBoxColumn { Name = "colComponente", HeaderText = "Componente", DataPropertyName = "Componente" };
-            var colCantDet = new System.Windows.Forms.DataGridViewTextBoxColumn { Name = "colCantidad", HeaderText = "Cantidad", DataPropertyName = "Cantidad" };
-            var colSubDet = new System.Windows.Forms.DataGridViewTextBoxColumn { Name = "colSubtotal", HeaderText = "Subtotal", DataPropertyName = "Subtotal" };
+            System.Windows.Forms.DataGridViewTextBoxColumn colCompDet = new System.Windows.Forms.DataGridViewTextBoxColumn { Name = "colComponente", HeaderText = "Componente", DataPropertyName = "Componente" };
+            System.Windows.Forms.DataGridViewTextBoxColumn colCantDet = new System.Windows.Forms.DataGridViewTextBoxColumn { Name = "colCantidad", HeaderText = "Cantidad", DataPropertyName = "Cantidad" };
+            System.Windows.Forms.DataGridViewTextBoxColumn colSubDet = new System.Windows.Forms.DataGridViewTextBoxColumn { Name = "colSubtotal", HeaderText = "Subtotal", DataPropertyName = "Subtotal" };
             this.dgvDetallePedido.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] { colCompDet, colCantDet, colSubDet });
 
             // pnlAcciones
@@ -173,6 +194,7 @@ namespace ElectroJoule.UI
 
             // frmPedidos
             this.ClientSize = new System.Drawing.Size(950, 620);
+            this.Controls.Add(this.pnlEncabezado);
             this.Controls.Add(this.splitPedidos);
             this.Controls.Add(this.pnlFiltros);
             this.Controls.Add(this.pnlAcciones);
@@ -189,6 +211,7 @@ namespace ElectroJoule.UI
             this.grpDetalle.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvDetallePedido)).EndInit();
             this.pnlAcciones.ResumeLayout(false);
+            this.pnlEncabezado.ResumeLayout(false);
             this.ResumeLayout(false);
         }
     }

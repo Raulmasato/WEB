@@ -3,6 +3,8 @@ namespace ElectroJoule.UI
     partial class frmCategorias
     {
         private System.ComponentModel.IContainer components = null;
+        private System.Windows.Forms.Panel pnlEncabezado;
+        private System.Windows.Forms.Label lblTituloForm;
         private System.Windows.Forms.DataGridView dgvCategorias;
         private System.Windows.Forms.GroupBox grpDatos;
         private System.Windows.Forms.Label lblNombreCat;
@@ -32,7 +34,26 @@ namespace ElectroJoule.UI
             this.btnEliminar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCategorias)).BeginInit();
             this.grpDatos.SuspendLayout();
+            this.pnlEncabezado = new System.Windows.Forms.Panel();
+            this.lblTituloForm = new System.Windows.Forms.Label();
+            this.pnlEncabezado.SuspendLayout();
             this.SuspendLayout();
+
+            // pnlEncabezado
+            this.pnlEncabezado.BackColor = System.Drawing.Color.FromArgb(46, 117, 182);
+            this.pnlEncabezado.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlEncabezado.Height = 40;
+            this.pnlEncabezado.Name = "pnlEncabezado";
+            this.pnlEncabezado.Controls.Add(this.lblTituloForm);
+
+            // lblTituloForm
+            this.lblTituloForm.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblTituloForm.ForeColor = System.Drawing.Color.White;
+            this.lblTituloForm.Font = new System.Drawing.Font("Segoe UI Semibold", 12f);
+            this.lblTituloForm.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblTituloForm.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.lblTituloForm.Text = "Gestión de Categorías";
+            this.lblTituloForm.Name = "lblTituloForm";
 
             // dgvCategorias
             this.dgvCategorias.Location = new System.Drawing.Point(8, 48);
@@ -44,8 +65,8 @@ namespace ElectroJoule.UI
             this.dgvCategorias.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvCategorias.Name = "dgvCategorias";
             this.dgvCategorias.SelectionChanged += new System.EventHandler(this.dgvCategorias_SelectionChanged);
-            var colId = new System.Windows.Forms.DataGridViewTextBoxColumn { Name = "colId", HeaderText = "Id", DataPropertyName = "Id" };
-            var colNombre = new System.Windows.Forms.DataGridViewTextBoxColumn { Name = "colNombre", HeaderText = "Nombre", DataPropertyName = "Nombre" };
+            System.Windows.Forms.DataGridViewTextBoxColumn colId = new System.Windows.Forms.DataGridViewTextBoxColumn { Name = "colId", HeaderText = "Id", DataPropertyName = "Id" };
+            System.Windows.Forms.DataGridViewTextBoxColumn colNombre = new System.Windows.Forms.DataGridViewTextBoxColumn { Name = "colNombre", HeaderText = "Nombre", DataPropertyName = "Nombre" };
             this.dgvCategorias.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] { colId, colNombre });
 
             // grpDatos
@@ -108,6 +129,7 @@ namespace ElectroJoule.UI
 
             // frmCategorias
             this.ClientSize = new System.Drawing.Size(700, 480);
+            this.Controls.Add(this.pnlEncabezado);
             this.Controls.Add(this.dgvCategorias);
             this.Controls.Add(this.grpDatos);
             this.Controls.Add(this.btnNuevo);
@@ -119,6 +141,7 @@ namespace ElectroJoule.UI
             ((System.ComponentModel.ISupportInitialize)(this.dgvCategorias)).EndInit();
             this.grpDatos.ResumeLayout(false);
             this.grpDatos.PerformLayout();
+            this.pnlEncabezado.ResumeLayout(false);
             this.ResumeLayout(false);
         }
     }

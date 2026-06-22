@@ -3,6 +3,8 @@ namespace ElectroJoule.UI
     partial class frmCatalogo
     {
         private System.ComponentModel.IContainer components = null;
+        private System.Windows.Forms.Panel pnlEncabezado;
+        private System.Windows.Forms.Label lblTituloForm;
         private System.Windows.Forms.Panel pnlFiltros;
         private System.Windows.Forms.TextBox txtBuscar;
         private System.Windows.Forms.ComboBox cboCategoria;
@@ -36,7 +38,26 @@ namespace ElectroJoule.UI
             this.flpProductos = new System.Windows.Forms.FlowLayoutPanel();
             this.pnlFiltros.SuspendLayout();
             this.pnlResumenCarrito.SuspendLayout();
+            this.pnlEncabezado = new System.Windows.Forms.Panel();
+            this.lblTituloForm = new System.Windows.Forms.Label();
+            this.pnlEncabezado.SuspendLayout();
             this.SuspendLayout();
+
+            // pnlEncabezado
+            this.pnlEncabezado.BackColor = System.Drawing.Color.FromArgb(46, 117, 182);
+            this.pnlEncabezado.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlEncabezado.Height = 40;
+            this.pnlEncabezado.Name = "pnlEncabezado";
+            this.pnlEncabezado.Controls.Add(this.lblTituloForm);
+
+            // lblTituloForm
+            this.lblTituloForm.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblTituloForm.ForeColor = System.Drawing.Color.White;
+            this.lblTituloForm.Font = new System.Drawing.Font("Segoe UI Semibold", 12f);
+            this.lblTituloForm.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblTituloForm.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.lblTituloForm.Text = "Catálogo de Componentes";
+            this.lblTituloForm.Name = "lblTituloForm";
 
             // pnlFiltros
             this.pnlFiltros.Controls.Add(this.txtBuscar);
@@ -126,6 +147,7 @@ namespace ElectroJoule.UI
 
             // frmCatalogo
             this.ClientSize = new System.Drawing.Size(1000, 640);
+            this.Controls.Add(this.pnlEncabezado);
             this.Controls.Add(this.flpProductos);
             this.Controls.Add(this.pnlResumenCarrito);
             this.Controls.Add(this.pnlFiltros);
@@ -134,6 +156,7 @@ namespace ElectroJoule.UI
 
             this.pnlFiltros.ResumeLayout(false);
             this.pnlResumenCarrito.ResumeLayout(false);
+            this.pnlEncabezado.ResumeLayout(false);
             this.ResumeLayout(false);
         }
     }

@@ -3,7 +3,7 @@ using System.Windows.Forms;
 
 namespace ElectroJoule.UI
 {
-    public partial class frmComprobante : frmBaseHijo
+    public partial class frmComprobante : System.Windows.Forms.Form
     {
         public frmComprobante()
         {

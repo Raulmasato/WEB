@@ -3,6 +3,8 @@ namespace ElectroJoule.UI
     partial class frmReportes
     {
         private System.ComponentModel.IContainer components = null;
+        private System.Windows.Forms.Panel pnlEncabezado;
+        private System.Windows.Forms.Label lblTituloForm;
         private System.Windows.Forms.TabControl tabReportes;
         private System.Windows.Forms.TabPage tabVentas;
         private System.Windows.Forms.TabPage tabInventario;
@@ -100,7 +102,26 @@ namespace ElectroJoule.UI
             this.tabEstadisticas.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)this.dgvVentas).BeginInit();
             ((System.ComponentModel.ISupportInitialize)this.dgvMovimientos).BeginInit();
+            this.pnlEncabezado = new System.Windows.Forms.Panel();
+            this.lblTituloForm = new System.Windows.Forms.Label();
+            this.pnlEncabezado.SuspendLayout();
             this.SuspendLayout();
+
+            // pnlEncabezado
+            this.pnlEncabezado.BackColor = System.Drawing.Color.FromArgb(46, 117, 182);
+            this.pnlEncabezado.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlEncabezado.Height = 40;
+            this.pnlEncabezado.Name = "pnlEncabezado";
+            this.pnlEncabezado.Controls.Add(this.lblTituloForm);
+
+            // lblTituloForm
+            this.lblTituloForm.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblTituloForm.ForeColor = System.Drawing.Color.White;
+            this.lblTituloForm.Font = new System.Drawing.Font("Segoe UI Semibold", 12f);
+            this.lblTituloForm.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblTituloForm.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.lblTituloForm.Text = "Reportes y Estadísticas";
+            this.lblTituloForm.Name = "lblTituloForm";
 
             // tabReportes
             this.tabReportes.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -130,7 +151,7 @@ namespace ElectroJoule.UI
             this.dgvVentas.AllowUserToAddRows = false; this.dgvVentas.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             System.Windows.Forms.DataGridViewCellStyle dgvVentasAltStyle = new System.Windows.Forms.DataGridViewCellStyle();
             dgvVentasAltStyle.BackColor = System.Drawing.Color.FromArgb(234, 241, 250);
-            this.dgvVentas.AlternatingRowsDefaultCellStyle = dgvVentasAltStyle
+            this.dgvVentas.AlternatingRowsDefaultCellStyle = dgvVentasAltStyle;
             this.dgvVentas.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
                 new System.Windows.Forms.DataGridViewTextBoxColumn { Name = "colFecha", HeaderText = "Fecha" },
                 new System.Windows.Forms.DataGridViewTextBoxColumn { Name = "colCliente", HeaderText = "Cliente" },
@@ -179,7 +200,7 @@ namespace ElectroJoule.UI
             this.dgvMovimientos.AllowUserToAddRows = false; this.dgvMovimientos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             System.Windows.Forms.DataGridViewCellStyle dgvMovimientosAltStyle = new System.Windows.Forms.DataGridViewCellStyle();
             dgvMovimientosAltStyle.BackColor = System.Drawing.Color.FromArgb(234, 241, 250);
-            this.dgvMovimientos.AlternatingRowsDefaultCellStyle = dgvMovimientosAltStyle
+            this.dgvMovimientos.AlternatingRowsDefaultCellStyle = dgvMovimientosAltStyle;
             this.dgvMovimientos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
                 new System.Windows.Forms.DataGridViewTextBoxColumn { Name = "colFecha", HeaderText = "Fecha" },
                 new System.Windows.Forms.DataGridViewTextBoxColumn { Name = "colTipo", HeaderText = "Tipo" },
@@ -225,6 +246,7 @@ namespace ElectroJoule.UI
 
             // frmReportes
             this.Text = "Reportes y Estadísticas"; this.ClientSize = new System.Drawing.Size(1000, 640);
+            this.Controls.Add(this.pnlEncabezado);
             this.Controls.Add(this.tabReportes);
 
             this.tabReportes.ResumeLayout(false);
@@ -233,6 +255,7 @@ namespace ElectroJoule.UI
             this.tabEstadisticas.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)this.dgvVentas).EndInit();
             ((System.ComponentModel.ISupportInitialize)this.dgvMovimientos).EndInit();
+            this.pnlEncabezado.ResumeLayout(false);
             this.ResumeLayout(false);
         }
     }

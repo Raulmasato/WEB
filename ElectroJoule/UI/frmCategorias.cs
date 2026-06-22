@@ -3,7 +3,7 @@ using System.Windows.Forms;
 
 namespace ElectroJoule.UI
 {
-    public partial class frmCategorias : frmBaseHijo
+    public partial class frmCategorias : System.Windows.Forms.Form
     {
         public frmCategorias()
         {
