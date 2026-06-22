@@ -45,7 +45,7 @@ namespace ElectroJoule.UI
             this.lblPrecio.Size = new System.Drawing.Size(184, 20);
             this.lblPrecio.Name = "lblPrecio";
             this.lblPrecio.Text = "$ 0.00";
-            this.lblPrecio.ForeColor = Estilos.Primario;
+            this.lblPrecio.ForeColor = System.Drawing.ColorTranslator.FromHtml("#2E75B6");
             this.lblPrecio.Font = new System.Drawing.Font("Segoe UI", 9f, System.Drawing.FontStyle.Bold);
 
             // numCantidad
@@ -61,7 +61,7 @@ namespace ElectroJoule.UI
             this.btnAgregar.Size = new System.Drawing.Size(96, 26);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Text = "Agregar al carrito";
-            this.btnAgregar.BackColor = Estilos.Primario;
+            this.btnAgregar.BackColor = System.Drawing.ColorTranslator.FromHtml("#2E75B6");
             this.btnAgregar.ForeColor = System.Drawing.Color.White;
             this.btnAgregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);

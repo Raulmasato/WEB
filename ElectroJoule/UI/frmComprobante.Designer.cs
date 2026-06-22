@@ -122,7 +122,7 @@ namespace ElectroJoule.UI
             this.btnDescargarPdf.Size = new System.Drawing.Size(120, 28);
             this.btnDescargarPdf.Name = "btnDescargarPdf";
             this.btnDescargarPdf.Text = "Descargar PDF";
-            this.btnDescargarPdf.BackColor = Estilos.Primario;
+            this.btnDescargarPdf.BackColor = System.Drawing.ColorTranslator.FromHtml("#2E75B6");
             this.btnDescargarPdf.ForeColor = System.Drawing.Color.White;
             this.btnDescargarPdf.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDescargarPdf.Anchor = System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right;

@@ -54,7 +54,7 @@ namespace ElectroJoule.UI
             this.btnBuscarVenta.Size = new System.Drawing.Size(100, 26);
             this.btnBuscarVenta.Name = "btnBuscarVenta";
             this.btnBuscarVenta.Text = "Buscar venta";
-            this.btnBuscarVenta.BackColor = Estilos.Primario;
+            this.btnBuscarVenta.BackColor = System.Drawing.ColorTranslator.FromHtml("#2E75B6");
             this.btnBuscarVenta.ForeColor = System.Drawing.Color.White;
             this.btnBuscarVenta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBuscarVenta.Click += new System.EventHandler(this.btnBuscarVenta_Click);
@@ -63,7 +63,7 @@ namespace ElectroJoule.UI
             this.lblVentaSeleccionada.Location = new System.Drawing.Point(326, 18);
             this.lblVentaSeleccionada.Name = "lblVentaSeleccionada";
             this.lblVentaSeleccionada.Text = "Venta seleccionada: —";
-            this.lblVentaSeleccionada.ForeColor = Estilos.Oscuro;
+            this.lblVentaSeleccionada.ForeColor = System.Drawing.ColorTranslator.FromHtml("#1F4E79");
 
             // dgvItems
             this.dgvItems.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -103,7 +103,7 @@ namespace ElectroJoule.UI
             this.btnProcesarDevolucion.Size = new System.Drawing.Size(130, 30);
             this.btnProcesarDevolucion.Name = "btnProcesarDevolucion";
             this.btnProcesarDevolucion.Text = "Procesar devolución";
-            this.btnProcesarDevolucion.BackColor = Estilos.Primario;
+            this.btnProcesarDevolucion.BackColor = System.Drawing.ColorTranslator.FromHtml("#2E75B6");
             this.btnProcesarDevolucion.ForeColor = System.Drawing.Color.White;
             this.btnProcesarDevolucion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnProcesarDevolucion.Anchor = System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right;

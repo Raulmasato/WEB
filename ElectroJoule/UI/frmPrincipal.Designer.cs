@@ -282,12 +282,12 @@ namespace ElectroJoule.UI
             this.tslEstadoConexion.Text = "Conectado";
 
             // frmPrincipal
-            this.BackColor = Estilos.FondoForm;
+            this.BackColor = System.Drawing.ColorTranslator.FromHtml("#F5F7FA");
             this.ClientSize = new System.Drawing.Size(1280, 720);
             this.Controls.Add(this.msPrincipal);
             this.Controls.Add(this.tsPrincipal);
             this.Controls.Add(this.ssPrincipal);
-            this.Font = Estilos.FuenteGeneral;
+            this.Font = new System.Drawing.Font("Segoe UI", 9f);
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.msPrincipal;
             this.Name = "frmPrincipal";

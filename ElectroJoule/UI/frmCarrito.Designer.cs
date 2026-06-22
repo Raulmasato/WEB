@@ -67,7 +67,7 @@ namespace ElectroJoule.UI
             // lblTotal
             this.lblTotal.Text = "$ 0.00";
             this.lblTotal.Font = new System.Drawing.Font("Segoe UI", 16f, System.Drawing.FontStyle.Bold);
-            this.lblTotal.ForeColor = Estilos.Primario;
+            this.lblTotal.ForeColor = System.Drawing.ColorTranslator.FromHtml("#2E75B6");
             this.lblTotal.Location = new System.Drawing.Point(80, 16);
             this.lblTotal.AutoSize = true;
             this.lblTotal.Name = "lblTotal";
@@ -91,7 +91,7 @@ namespace ElectroJoule.UI
             this.btnConfirmarCompra.Size = new System.Drawing.Size(140, 30);
             this.btnConfirmarCompra.Name = "btnConfirmarCompra";
             this.btnConfirmarCompra.Text = "Confirmar compra";
-            this.btnConfirmarCompra.BackColor = Estilos.Primario;
+            this.btnConfirmarCompra.BackColor = System.Drawing.ColorTranslator.FromHtml("#2E75B6");
             this.btnConfirmarCompra.ForeColor = System.Drawing.Color.White;
             this.btnConfirmarCompra.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnConfirmarCompra.Anchor = System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right;
