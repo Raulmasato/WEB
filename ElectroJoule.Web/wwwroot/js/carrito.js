@@ -1,0 +1,1 @@
+// ElectroJoule - Carrito helpers

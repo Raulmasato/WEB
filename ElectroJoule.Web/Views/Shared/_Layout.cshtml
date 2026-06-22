@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] — ElectroJoule</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+</head>
+<body>
+
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark ej-navbar">
+        <div class="container-xxl">
+            <a class="navbar-brand d-flex align-items-center gap-2" href="/">
+                <span class="ej-logo-icon"><i class="bi bi-lightning-charge-fill"></i></span>
+                <span class="fw-bold fs-5">ElectroJoule</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMain">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navMain">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="/"><i class="bi bi-grid me-1"></i>Catálogo</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Categorías</a>
+                        <ul class="dropdown-menu dropdown-menu-dark">
+                            <li><a class="dropdown-item" href="/?Categoria=Microcontroladores">Microcontroladores</a></li>
+                            <li><a class="dropdown-item" href="/?Categoria=Sensores">Sensores</a></li>
+                            <li><a class="dropdown-item" href="/?Categoria=Displays">Displays</a></li>
+                            <li><a class="dropdown-item" href="/?Categoria=Drivers+y+Módulos">Drivers y Módulos</a></li>
+                            <li><a class="dropdown-item" href="/?Categoria=Componentes+Pasivos">Componentes Pasivos</a></li>
+                            <li><a class="dropdown-item" href="/?Categoria=Herramientas+y+Accesorios">Herramientas y Accesorios</a></li>
+                            <li><a class="dropdown-item" href="/?Categoria=Computadoras+SBC">Computadoras SBC</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <form class="d-flex me-3" action="/" method="get">
+                    <div class="input-group ej-searchbar">
+                        <input type="text" name="Buscar" class="form-control form-control-sm"
+                               placeholder="Buscar componentes..." value="@ViewBag.Filtro?.Buscar" />
+                        <button class="btn btn-sm btn-outline-light" type="submit">
+                            <i class="bi bi-search"></i>
+                        </button>
+                    </div>
+                </form>
+
+                <a href="/Carrito" class="btn btn-outline-light btn-sm position-relative">
+                    <i class="bi bi-cart3 me-1"></i>Carrito
+                    @if (ViewBag.CarritoCount != null && (int)ViewBag.CarritoCount > 0)
+                    {
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-warning text-dark">
+                            @ViewBag.CarritoCount
+                        </span>
+                    }
+                </a>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<main class="ej-main">
+    @RenderBody()
+</main>
+
+<footer class="ej-footer mt-5">
+    <div class="container-xxl py-4">
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="d-flex align-items-center gap-2 mb-3">
+                    <span class="ej-logo-icon"><i class="bi bi-lightning-charge-fill"></i></span>
+                    <span class="fw-bold fs-5 text-white">ElectroJoule</span>
+                </div>
+                <p class="text-white-50 small">
+                    Tu tienda de componentes electrónicos de confianza. Arduino, sensores, módulos y más.
+                </p>
+            </div>
+            <div class="col-md-4">
+                <h6 class="text-white mb-3">Navegación</h6>
+                <ul class="list-unstyled small">
+                    <li><a href="/" class="text-white-50 text-decoration-none">Catálogo</a></li>
+                    <li><a href="/Carrito" class="text-white-50 text-decoration-none">Mi carrito</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <h6 class="text-white mb-3">Pagos</h6>
+                <p class="text-white-50 small">Procesamos pagos de forma segura a través de Mercado Pago.</p>
+                <div class="d-flex gap-2 flex-wrap mt-2">
+                    <span class="badge bg-secondary"><i class="bi bi-credit-card me-1"></i>Tarjeta</span>
+                    <span class="badge bg-secondary"><i class="bi bi-cash me-1"></i>Efectivo</span>
+                    <span class="badge bg-secondary"><i class="bi bi-bank me-1"></i>Transferencia</span>
+                </div>
+            </div>
+        </div>
+        <hr class="border-secondary" />
+        <p class="text-center text-white-50 small mb-0">
+            © @DateTime.Now.Year ElectroJoule — Todos los derechos reservados
+        </p>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="~/js/carrito.js" asp-append-version="true"></script>
+@await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

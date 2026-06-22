@@ -1,0 +1,221 @@
+/* ── Paleta ElectroJoule ─────────────────────────────── */
+:root {
+    --ej-primary:      #2E75B6;
+    --ej-primary-dark: #1F4E79;
+    --ej-primary-light:#BDD7EE;
+    --ej-bg:           #F5F7FA;
+    --ej-text:         #212529;
+    --ej-alt-row:      #EAF1FA;
+}
+
+body {
+    background-color: var(--ej-bg);
+    color: var(--ej-text);
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+}
+
+/* ── Navbar ─────────────────────────────────────────── */
+.ej-navbar {
+    background: linear-gradient(135deg, var(--ej-primary-dark) 0%, var(--ej-primary) 100%);
+    box-shadow: 0 2px 12px rgba(31,78,121,.25);
+    padding: .75rem 0;
+}
+
+.ej-logo-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    background: rgba(255,255,255,.15);
+    border-radius: 8px;
+    font-size: 1rem;
+    color: #FFD700;
+}
+
+.ej-searchbar .form-control {
+    border-color: rgba(255,255,255,.3);
+    background: rgba(255,255,255,.1);
+    color: #fff;
+    min-width: 220px;
+}
+
+.ej-searchbar .form-control::placeholder { color: rgba(255,255,255,.6); }
+.ej-searchbar .form-control:focus {
+    background: rgba(255,255,255,.2);
+    color: #fff;
+    box-shadow: none;
+    border-color: rgba(255,255,255,.6);
+}
+
+/* ── Hero ─────────────────────────────────────────────  */
+.ej-hero {
+    background: linear-gradient(135deg, var(--ej-primary-dark) 0%, #1a3a5c 60%, #0d2137 100%);
+}
+
+.ej-hero-accent {
+    color: #FFD700;
+}
+
+.ej-hero-stats {
+    background: rgba(255,255,255,.06);
+    border: 1px solid rgba(255,255,255,.12);
+    border-radius: 16px;
+    padding: 1.5rem 2rem;
+    backdrop-filter: blur(4px);
+}
+
+/* ── Filtros sticky ──────────────────────────────────── */
+.ej-filtros-bar {
+    background: #fff;
+    border-bottom: 1px solid #e2e8f0;
+    box-shadow: 0 2px 8px rgba(0,0,0,.06);
+    z-index: 900;
+}
+
+/* ── Tarjetas de producto ────────────────────────────── */
+.ej-producto-card {
+    border: 1px solid #e8eef5;
+    border-radius: 12px;
+    transition: transform .18s ease, box-shadow .18s ease;
+    background: #fff;
+    overflow: hidden;
+}
+
+.ej-producto-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 28px rgba(46,117,182,.15);
+    border-color: var(--ej-primary-light);
+}
+
+.ej-card-img-wrap {
+    position: relative;
+    overflow: hidden;
+    height: 180px;
+    background: #f0f4f8;
+}
+
+.ej-card-img-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform .3s ease;
+}
+
+.ej-producto-card:hover .ej-card-img-wrap img {
+    transform: scale(1.04);
+}
+
+.ej-badge-cat {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    font-size: .68rem;
+    background-color: var(--ej-primary) !important;
+}
+
+.ej-marca-label {
+    font-size: .72rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: .04em;
+    color: var(--ej-primary);
+}
+
+.ej-descripcion-truncada {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    font-size: .82rem;
+    line-height: 1.4;
+}
+
+/* ── Precios ────────────────────────────────────────── */
+.ej-precio {
+    color: var(--ej-primary);
+    font-weight: 700;
+}
+
+.ej-precio-tabla {
+    color: var(--ej-primary-dark);
+}
+
+.ej-precio-detalle {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--ej-primary);
+}
+
+/* ── Card headers primarios ──────────────────────────── */
+.ej-card-header-primary {
+    background: linear-gradient(90deg, var(--ej-primary-dark), var(--ej-primary));
+    padding: .85rem 1.25rem;
+}
+
+/* ── Detalle de producto ─────────────────────────────── */
+.ej-detalle-img-wrap {
+    background: #f0f4f8;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.ej-detalle-img-wrap img {
+    width: 100%;
+    max-height: 380px;
+    object-fit: cover;
+}
+
+/* ── Páginas de estado de pago ───────────────────────── */
+.ej-status-icon {
+    width: 88px;
+    height: 88px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+}
+
+.ej-status-icon.success {
+    background: #d1fae5;
+    color: #059669;
+}
+
+.ej-status-icon.error {
+    background: #fee2e2;
+    color: #dc2626;
+}
+
+.ej-status-icon.pending {
+    background: #fef3c7;
+    color: #d97706;
+}
+
+/* ── Footer ─────────────────────────────────────────── */
+.ej-footer {
+    background: linear-gradient(135deg, var(--ej-primary-dark) 0%, #0d2137 100%);
+}
+
+/* ── Main content spacing ────────────────────────────── */
+.ej-main {
+    min-height: calc(100vh - 60px - 220px);
+}
+
+/* ── Bootstrap overrides ─────────────────────────────── */
+.btn-primary {
+    background-color: var(--ej-primary);
+    border-color: var(--ej-primary);
+}
+.btn-primary:hover, .btn-primary:focus {
+    background-color: var(--ej-primary-dark);
+    border-color: var(--ej-primary-dark);
+}
+
+.bg-primary-subtle {
+    background-color: var(--ej-alt-row) !important;
+}
+
+.text-primary {
+    color: var(--ej-primary) !important;
+}
