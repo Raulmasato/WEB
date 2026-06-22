@@ -110,7 +110,7 @@ namespace ElectroJoule.UI
             this.btnBuscar.Size = new System.Drawing.Size(80, 26);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Text = "Buscar";
-            this.btnBuscar.BackColor = Estilos.Primario;
+            this.btnBuscar.BackColor = System.Drawing.ColorTranslator.FromHtml("#2E75B6");
             this.btnBuscar.ForeColor = System.Drawing.Color.White;
             this.btnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
@@ -263,7 +263,7 @@ namespace ElectroJoule.UI
             this.btnGuardar.Size = new System.Drawing.Size(80, 28);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Text = "Guardar";
-            this.btnGuardar.BackColor = Estilos.Primario;
+            this.btnGuardar.BackColor = System.Drawing.ColorTranslator.FromHtml("#2E75B6");
             this.btnGuardar.ForeColor = System.Drawing.Color.White;
             this.btnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnGuardar.Anchor = System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right;

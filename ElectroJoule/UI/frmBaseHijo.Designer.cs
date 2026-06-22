@@ -20,7 +20,7 @@ namespace ElectroJoule.UI
             this.SuspendLayout();
 
             // pnlEncabezado
-            this.pnlEncabezado.BackColor = Estilos.Primario;
+            this.pnlEncabezado.BackColor = System.Drawing.ColorTranslator.FromHtml("#2E75B6");
             this.pnlEncabezado.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlEncabezado.Height = 40;
             this.pnlEncabezado.Controls.Add(this.lblTituloForm);
@@ -34,8 +34,8 @@ namespace ElectroJoule.UI
             this.lblTituloForm.Text = "Título";
 
             // frmBaseHijo
-            this.BackColor = Estilos.FondoForm;
-            this.Font = Estilos.FuenteGeneral;
+            this.BackColor = System.Drawing.ColorTranslator.FromHtml("#F5F7FA");
+            this.Font = new System.Drawing.Font("Segoe UI", 9f);
             this.Controls.Add(this.pnlEncabezado);
 
             this.pnlEncabezado.ResumeLayout(false);

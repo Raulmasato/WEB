@@ -101,7 +101,7 @@ namespace ElectroJoule.UI
             this.btnBuscar.Size = new System.Drawing.Size(80, 26);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Text = "Buscar";
-            this.btnBuscar.BackColor = Estilos.Primario;
+            this.btnBuscar.BackColor = System.Drawing.ColorTranslator.FromHtml("#2E75B6");
             this.btnBuscar.ForeColor = System.Drawing.Color.White;
             this.btnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
@@ -162,7 +162,7 @@ namespace ElectroJoule.UI
             this.btnActualizarEstado.Size = new System.Drawing.Size(130, 28);
             this.btnActualizarEstado.Name = "btnActualizarEstado";
             this.btnActualizarEstado.Text = "Actualizar estado";
-            this.btnActualizarEstado.BackColor = Estilos.Primario;
+            this.btnActualizarEstado.BackColor = System.Drawing.ColorTranslator.FromHtml("#2E75B6");
             this.btnActualizarEstado.ForeColor = System.Drawing.Color.White;
             this.btnActualizarEstado.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnActualizarEstado.Click += new System.EventHandler(this.btnActualizarEstado_Click);

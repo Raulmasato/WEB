@@ -81,7 +81,7 @@ namespace ElectroJoule.UI
             this.lblMonto.AutoSize = true;
             this.lblMonto.Location = new System.Drawing.Point(16, 40);
             this.lblMonto.Font = new System.Drawing.Font("Segoe UI", 16f);
-            this.lblMonto.ForeColor = Estilos.Primario;
+            this.lblMonto.ForeColor = System.Drawing.ColorTranslator.FromHtml("#2E75B6");
             this.lblMonto.Name = "lblMonto";
             this.lblMonto.Text = "$ 0.00";
 
@@ -216,7 +216,7 @@ namespace ElectroJoule.UI
             this.btnConfirmarPago.Size = new System.Drawing.Size(100, 30);
             this.btnConfirmarPago.Name = "btnConfirmarPago";
             this.btnConfirmarPago.Text = "Confirmar pago";
-            this.btnConfirmarPago.BackColor = Estilos.Primario;
+            this.btnConfirmarPago.BackColor = System.Drawing.ColorTranslator.FromHtml("#2E75B6");
             this.btnConfirmarPago.ForeColor = System.Drawing.Color.White;
             this.btnConfirmarPago.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnConfirmarPago.Anchor = System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right;
@@ -224,7 +224,7 @@ namespace ElectroJoule.UI
 
             // frmPago
             this.AcceptButton = this.btnConfirmarPago;
-            this.BackColor = Estilos.FondoForm;
+            this.BackColor = System.Drawing.ColorTranslator.FromHtml("#F5F7FA");
             this.ClientSize = new System.Drawing.Size(460, 420);
             this.Controls.Add(this.lblMontoTitulo);
             this.Controls.Add(this.lblMonto);
@@ -235,7 +235,7 @@ namespace ElectroJoule.UI
             this.Controls.Add(this.dtpFecha);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnConfirmarPago);
-            this.Font = Estilos.FuenteGeneral;
+            this.Font = new System.Drawing.Font("Segoe UI", 9f);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;
             this.Name = "frmPago";

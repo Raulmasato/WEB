@@ -73,7 +73,7 @@ namespace ElectroJoule.UI
             this.btnIngresar.Size = new System.Drawing.Size(260, 32);
             this.btnIngresar.Name = "btnIngresar";
             this.btnIngresar.Text = "Ingresar";
-            this.btnIngresar.BackColor = Estilos.Primario;
+            this.btnIngresar.BackColor = System.Drawing.ColorTranslator.FromHtml("#2E75B6");
             this.btnIngresar.ForeColor = System.Drawing.Color.White;
             this.btnIngresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnIngresar.Click += new System.EventHandler(this.btnIngresar_Click);
@@ -88,7 +88,7 @@ namespace ElectroJoule.UI
 
             // frmLogin
             this.AcceptButton = this.btnIngresar;
-            this.BackColor = Estilos.FondoForm;
+            this.BackColor = System.Drawing.ColorTranslator.FromHtml("#F5F7FA");
             this.ClientSize = new System.Drawing.Size(400, 340);
             this.Controls.Add(this.picLogo);
             this.Controls.Add(this.lblUsuario);
@@ -98,7 +98,7 @@ namespace ElectroJoule.UI
             this.Controls.Add(this.chkRecordarme);
             this.Controls.Add(this.btnIngresar);
             this.Controls.Add(this.lblError);
-            this.Font = Estilos.FuenteGeneral;
+            this.Font = new System.Drawing.Font("Segoe UI", 9f);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.Name = "frmLogin";
