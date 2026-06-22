@@ -58,7 +58,7 @@ namespace ElectroJoule.UI
             this.pnlFiltros.Padding = new System.Windows.Forms.Padding(6, 8, 6, 8);
             this.txtBuscar.Location = new System.Drawing.Point(6, 12); this.txtBuscar.Size = new System.Drawing.Size(240, 23);
             this.btnBuscar.Location = new System.Drawing.Point(254, 10); this.btnBuscar.Size = new System.Drawing.Size(80, 27); this.btnBuscar.Text = "Buscar";
-            this.btnBuscar.BackColor = System.Drawing.ColorTranslator.FromHtml("#2E75B6"); this.btnBuscar.ForeColor = System.Drawing.Color.White; this.btnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBuscar.BackColor = System.Drawing.Color.FromArgb(46, 117, 182); this.btnBuscar.ForeColor = System.Drawing.Color.White; this.btnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             this.btnLimpiar.Location = new System.Drawing.Point(342, 10); this.btnLimpiar.Size = new System.Drawing.Size(80, 27); this.btnLimpiar.Text = "Limpiar";
             this.btnLimpiar.FlatStyle = System.Windows.Forms.FlatStyle.Flat; this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
@@ -68,7 +68,9 @@ namespace ElectroJoule.UI
             this.dgvClientes.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvClientes.ReadOnly = true; this.dgvClientes.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvClientes.AllowUserToAddRows = false; this.dgvClientes.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgvClientes.MultiSelect = false; this.dgvClientes.AlternatingRowsDefaultCellStyle.BackColor = System.Drawing.ColorTranslator.FromHtml("#EAF1FA");
+            this.dgvClientes.MultiSelect = false; System.Windows.Forms.DataGridViewCellStyle dgvClientesAltStyle = new System.Windows.Forms.DataGridViewCellStyle();
+            dgvClientesAltStyle.BackColor = System.Drawing.Color.FromArgb(234, 241, 250);
+            this.dgvClientes.AlternatingRowsDefaultCellStyle = dgvClientesAltStyle
             this.dgvClientes.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
                 new System.Windows.Forms.DataGridViewTextBoxColumn { Name = "colId", HeaderText = "Id" },
                 new System.Windows.Forms.DataGridViewTextBoxColumn { Name = "colNombre", HeaderText = "Nombre" },
@@ -105,7 +107,7 @@ namespace ElectroJoule.UI
             this.btnGuardar.Text = "Guardar"; this.btnGuardar.Size = new System.Drawing.Size(90, 27);
             this.btnGuardar.Anchor = System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right;
             this.btnGuardar.Location = new System.Drawing.Point(588, 505);
-            this.btnGuardar.BackColor = System.Drawing.ColorTranslator.FromHtml("#2E75B6"); this.btnGuardar.ForeColor = System.Drawing.Color.White;
+            this.btnGuardar.BackColor = System.Drawing.Color.FromArgb(46, 117, 182); this.btnGuardar.ForeColor = System.Drawing.Color.White;
             this.btnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat; this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
 
             this.btnBajaLogica.Text = "Baja lógica"; this.btnBajaLogica.Size = new System.Drawing.Size(90, 27);

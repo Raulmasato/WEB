@@ -38,7 +38,7 @@ namespace ElectroJoule.UI
             this.pnlCliente.Controls.Add(this.lblFecha);
             this.pnlCliente.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlCliente.Height = 64;
-            this.pnlCliente.BackColor = System.Drawing.ColorTranslator.FromHtml("#F5F7FA");
+            this.pnlCliente.BackColor = System.Drawing.Color.FromArgb(245, 247, 250);
             this.pnlCliente.Padding = new System.Windows.Forms.Padding(8);
             this.pnlCliente.Name = "pnlCliente";
 
@@ -96,7 +96,7 @@ namespace ElectroJoule.UI
             this.btnConfirmar.Size = new System.Drawing.Size(90, 30);
             this.btnConfirmar.Name = "btnConfirmar";
             this.btnConfirmar.Text = "Confirmar";
-            this.btnConfirmar.BackColor = System.Drawing.ColorTranslator.FromHtml("#2E75B6");
+            this.btnConfirmar.BackColor = System.Drawing.Color.FromArgb(46, 117, 182);
             this.btnConfirmar.ForeColor = System.Drawing.Color.White;
             this.btnConfirmar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnConfirmar.Anchor = System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right;
@@ -104,7 +104,7 @@ namespace ElectroJoule.UI
 
             // frmConfirmarVenta
             this.AcceptButton = this.btnConfirmar;
-            this.BackColor = System.Drawing.ColorTranslator.FromHtml("#F5F7FA");
+            this.BackColor = System.Drawing.Color.FromArgb(245, 247, 250);
             this.ClientSize = new System.Drawing.Size(640, 520);
             this.Controls.Add(this.dgvDetalle);
             this.Controls.Add(this.pnlPie);

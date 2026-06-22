@@ -70,7 +70,7 @@ namespace ElectroJoule.UI
             this.btnBuscar.Size = new System.Drawing.Size(80, 26);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Text = "Buscar";
-            this.btnBuscar.BackColor = System.Drawing.ColorTranslator.FromHtml("#2E75B6");
+            this.btnBuscar.BackColor = System.Drawing.Color.FromArgb(46, 117, 182);
             this.btnBuscar.ForeColor = System.Drawing.Color.White;
             this.btnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
@@ -102,7 +102,7 @@ namespace ElectroJoule.UI
             // lblSubtotal
             this.lblSubtotal.Text = "$ 0.00";
             this.lblSubtotal.Font = new System.Drawing.Font("Segoe UI", 14f, System.Drawing.FontStyle.Bold);
-            this.lblSubtotal.ForeColor = System.Drawing.ColorTranslator.FromHtml("#2E75B6");
+            this.lblSubtotal.ForeColor = System.Drawing.Color.FromArgb(46, 117, 182);
             this.lblSubtotal.Location = new System.Drawing.Point(8, 64);
             this.lblSubtotal.Size = new System.Drawing.Size(200, 30);
             this.lblSubtotal.Name = "lblSubtotal";
@@ -111,7 +111,7 @@ namespace ElectroJoule.UI
             this.btnVerCarrito.Text = "Ver carrito";
             this.btnVerCarrito.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.btnVerCarrito.Height = 36;
-            this.btnVerCarrito.BackColor = System.Drawing.ColorTranslator.FromHtml("#2E75B6");
+            this.btnVerCarrito.BackColor = System.Drawing.Color.FromArgb(46, 117, 182);
             this.btnVerCarrito.ForeColor = System.Drawing.Color.White;
             this.btnVerCarrito.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnVerCarrito.Name = "btnVerCarrito";
@@ -122,7 +122,7 @@ namespace ElectroJoule.UI
             this.flpProductos.AutoScroll = true;
             this.flpProductos.WrapContents = true;
             this.flpProductos.Name = "flpProductos";
-            this.flpProductos.BackColor = System.Drawing.ColorTranslator.FromHtml("#F5F7FA");
+            this.flpProductos.BackColor = System.Drawing.Color.FromArgb(245, 247, 250);
 
             // frmCatalogo
             this.ClientSize = new System.Drawing.Size(1000, 640);
