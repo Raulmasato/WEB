@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 340" width="480" height="340">
+  <rect width="480" height="340" fill="#0d1a0d"/>
+  <rect x="80" y="60" width="320" height="200" rx="6" fill="#1a3300" stroke="#335500" stroke-width="2"/>
+  <!-- Ultrasonic transducers (2 cylinders) -->
+  <rect x="110" y="80" width="90" height="80" rx="8" fill="#888" stroke="#666" stroke-width="2"/>
+  <rect x="113" y="83" width="84" height="74" rx="6" fill="#aaa"/>
+  <!-- Concentric rings -->
+  <circle cx="155" cy="120" r="30" fill="none" stroke="#666" stroke-width="1.5"/>
+  <circle cx="155" cy="120" r="22" fill="none" stroke="#777" stroke-width="1.5"/>
+  <circle cx="155" cy="120" r="14" fill="#888" stroke="#999" stroke-width="2"/>
+  <circle cx="155" cy="120" r="7" fill="#555"/>
+  <text x="155" y="175" font-family="monospace" font-size="8" fill="#555" text-anchor="middle">T</text>
+  <!-- Second transducer -->
+  <rect x="280" y="80" width="90" height="80" rx="8" fill="#888" stroke="#666" stroke-width="2"/>
+  <rect x="283" y="83" width="84" height="74" rx="6" fill="#aaa"/>
+  <circle cx="325" cy="120" r="30" fill="none" stroke="#666" stroke-width="1.5"/>
+  <circle cx="325" cy="120" r="22" fill="none" stroke="#777" stroke-width="1.5"/>
+  <circle cx="325" cy="120" r="14" fill="#888" stroke="#999" stroke-width="2"/>
+  <circle cx="325" cy="120" r="7" fill="#555"/>
+  <text x="325" y="175" font-family="monospace" font-size="8" fill="#555" text-anchor="middle">R</text>
+  <!-- PCB traces and IC -->
+  <rect x="170" y="100" width="140" height="60" rx="3" fill="#1a4400" stroke="#225500" stroke-width="1.5"/>
+  <rect x="188" y="115" width="46" height="30" rx="2" fill="#111" stroke="#333" stroke-width="1"/>
+  <text x="211" y="128" font-family="monospace" font-size="7" fill="#888" text-anchor="middle">HC-SR04</text>
+  <text x="211" y="138" font-family="monospace" font-size="6" fill="#555" text-anchor="middle">SENSOR</text>
+  <!-- Small components -->
+  <rect x="260" y="115" width="20" height="10" rx="2" fill="#cc8800"/>
+  <rect x="285" y="115" width="16" height="10" rx="2" fill="#cc8800"/>
+  <!-- Pin header -->
+  <rect x="165" y="220" width="150" height="16" rx="2" fill="#111" stroke="#444" stroke-width="1"/>
+  <g fill="#c8a000">
+    <rect x="172" y="223" width="8" height="10" rx="1"/><rect x="194" y="223" width="8" height="10" rx="1"/>
+    <rect x="216" y="223" width="8" height="10" rx="1"/><rect x="238" y="223" width="8" height="10" rx="1"/>
+    <rect x="260" y="223" width="8" height="10" rx="1"/>
+  </g>
+  <text x="176" y="250" font-family="monospace" font-size="8" fill="#aaa" text-anchor="middle">VCC</text>
+  <text x="198" y="250" font-family="monospace" font-size="8" fill="#aaa" text-anchor="middle">Trig</text>
+  <text x="220" y="250" font-family="monospace" font-size="8" fill="#aaa" text-anchor="middle">Echo</text>
+  <text x="242" y="250" font-family="monospace" font-size="8" fill="#aaa" text-anchor="middle">GND</text>
+  <!-- Wave animation arrows -->
+  <path d="M 100 120 Q 80 100 60 120 Q 40 140 60 120" stroke="#44ff44" stroke-width="1.5" fill="none" opacity="0.7"/>
+  <path d="M 375 120 Q 395 100 415 120 Q 435 140 415 120" stroke="#44ff44" stroke-width="1.5" fill="none" opacity="0.7"/>
+  <text x="240" y="50" font-family="monospace" font-size="13" fill="#55bb55" text-anchor="middle" font-weight="bold">HC-SR04 Ultrasónico</text>
+  <text x="240" y="285" font-family="monospace" font-size="9" fill="#44aa44" text-anchor="middle">Rango: 2cm – 400cm · 40kHz · 5V</text>
+</svg>

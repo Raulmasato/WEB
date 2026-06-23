@@ -1,0 +1,35 @@
+@{
+    ViewData["Title"] = "Pago rechazado";
+    Layout = "_Layout";
+}
+
+<div class="container-xxl py-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card border-0 shadow-sm rounded-4 text-center p-5">
+                <div class="mb-4">
+                    <div class="ej-status-icon error mx-auto">
+                        <i class="bi bi-x-lg"></i>
+                    </div>
+                </div>
+                <h1 class="h3 fw-bold text-danger mb-2">Pago no procesado</h1>
+                <p class="text-muted mb-4">
+                    Hubo un problema al procesar tu pago. No se realizó ningún cobro.<br />
+                    Podés intentarlo nuevamente con otro medio de pago.
+                </p>
+                @if (ViewBag.NumeroOperacion != "—")
+                {
+                    <p class="small text-muted">Referencia: @ViewBag.NumeroOperacion</p>
+                }
+                <div class="d-grid gap-2">
+                    <a href="/Carrito/Checkout" class="btn btn-primary btn-lg">
+                        <i class="bi bi-arrow-counterclockwise me-2"></i>Intentar nuevamente
+                    </a>
+                    <a href="/Carrito" class="btn btn-outline-secondary">
+                        <i class="bi bi-cart3 me-2"></i>Ver carrito
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

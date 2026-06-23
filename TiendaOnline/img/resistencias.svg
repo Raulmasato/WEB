@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 340" width="480" height="340">
+  <rect width="480" height="340" fill="#1a1a2a"/>
+  <!-- Background grid lines (resistor tape) -->
+  <g opacity="0.15" stroke="#aaa" stroke-width="0.5">
+    <line x1="0" y1="50" x2="480" y2="50"/><line x1="0" y1="100" x2="480" y2="100"/>
+    <line x1="0" y1="150" x2="480" y2="150"/><line x1="0" y1="200" x2="480" y2="200"/>
+    <line x1="0" y1="250" x2="480" y2="250"/>
+  </g>
+  <!-- Resistor tape strip -->
+  <rect x="30" y="40" width="420" height="260" rx="8" fill="#f5f0e8" opacity="0.05"/>
+  <!-- Multiple resistors arranged in rows -->
+  <!-- Row 1 -->
+  <g transform="translate(50,70)">
+    <!-- Resistor body + leads -->
+    <line x1="0" y1="10" x2="12" y2="10" stroke="#c8c8c8" stroke-width="2.5"/>
+    <rect x="12" y="4" width="46" height="12" rx="3" fill="#cc8800"/>
+    <rect x="12" y="4" width="46" height="12" rx="3" fill="url(#rstripe1)"/>
+    <line x1="58" y1="10" x2="70" y2="10" stroke="#c8c8c8" stroke-width="2.5"/>
+    <!-- bands: brown-black-orange = 10k -->
+    <rect x="17" y="4" width="5" height="12" fill="#663300" rx="1"/>
+    <rect x="25" y="4" width="5" height="12" fill="#000" rx="1"/>
+    <rect x="33" y="4" width="5" height="12" fill="#ff6600" rx="1"/>
+    <rect x="45" y="4" width="5" height="12" fill="#c8c800" rx="1"/>
+  </g>
+  <g transform="translate(150,70)">
+    <line x1="0" y1="10" x2="12" y2="10" stroke="#c8c8c8" stroke-width="2.5"/>
+    <rect x="12" y="4" width="46" height="12" rx="3" fill="#cc8800"/>
+    <line x1="58" y1="10" x2="70" y2="10" stroke="#c8c8c8" stroke-width="2.5"/>
+    <rect x="17" y="4" width="5" height="12" fill="#663300" rx="1"/>
+    <rect x="25" y="4" width="5" height="12" fill="#000" rx="1"/>
+    <rect x="33" y="4" width="5" height="12" fill="#ff6600" rx="1"/>
+    <rect x="45" y="4" width="5" height="12" fill="#c8c800" rx="1"/>
+  </g>
+  <g transform="translate(250,70)">
+    <line x1="0" y1="10" x2="12" y2="10" stroke="#c8c8c8" stroke-width="2.5"/>
+    <rect x="12" y="4" width="46" height="12" rx="3" fill="#cc8800"/>
+    <line x1="58" y1="10" x2="70" y2="10" stroke="#c8c8c8" stroke-width="2.5"/>
+    <rect x="17" y="4" width="5" height="12" fill="#663300" rx="1"/>
+    <rect x="25" y="4" width="5" height="12" fill="#000" rx="1"/>
+    <rect x="33" y="4" width="5" height="12" fill="#ff6600" rx="1"/>
+    <rect x="45" y="4" width="5" height="12" fill="#c8c800" rx="1"/>
+  </g>
+  <g transform="translate(350,70)">
+    <line x1="0" y1="10" x2="12" y2="10" stroke="#c8c8c8" stroke-width="2.5"/>
+    <rect x="12" y="4" width="46" height="12" rx="3" fill="#cc8800"/>
+    <line x1="58" y1="10" x2="70" y2="10" stroke="#c8c8c8" stroke-width="2.5"/>
+    <rect x="17" y="4" width="5" height="12" fill="#663300" rx="1"/>
+    <rect x="25" y="4" width="5" height="12" fill="#000" rx="1"/>
+    <rect x="33" y="4" width="5" height="12" fill="#ff6600" rx="1"/>
+    <rect x="45" y="4" width="5" height="12" fill="#c8c800" rx="1"/>
+  </g>
+  <!-- Row 2 -->
+  <g transform="translate(50,120)"><line x1="0" y1="10" x2="12" y2="10" stroke="#c8c8c8" stroke-width="2.5"/><rect x="12" y="4" width="46" height="12" rx="3" fill="#cc8800"/><line x1="58" y1="10" x2="70" y2="10" stroke="#c8c8c8" stroke-width="2.5"/><rect x="17" y="4" width="5" height="12" fill="#663300" rx="1"/><rect x="25" y="4" width="5" height="12" fill="#000" rx="1"/><rect x="33" y="4" width="5" height="12" fill="#ff6600" rx="1"/><rect x="45" y="4" width="5" height="12" fill="#c8c800" rx="1"/></g>
+  <g transform="translate(150,120)"><line x1="0" y1="10" x2="12" y2="10" stroke="#c8c8c8" stroke-width="2.5"/><rect x="12" y="4" width="46" height="12" rx="3" fill="#cc8800"/><line x1="58" y1="10" x2="70" y2="10" stroke="#c8c8c8" stroke-width="2.5"/><rect x="17" y="4" width="5" height="12" fill="#663300" rx="1"/><rect x="25" y="4" width="5" height="12" fill="#000" rx="1"/><rect x="33" y="4" width="5" height="12" fill="#ff6600" rx="1"/><rect x="45" y="4" width="5" height="12" fill="#c8c800" rx="1"/></g>
+  <g transform="translate(250,120)"><line x1="0" y1="10" x2="12" y2="10" stroke="#c8c8c8" stroke-width="2.5"/><rect x="12" y="4" width="46" height="12" rx="3" fill="#cc8800"/><line x1="58" y1="10" x2="70" y2="10" stroke="#c8c8c8" stroke-width="2.5"/><rect x="17" y="4" width="5" height="12" fill="#663300" rx="1"/><rect x="25" y="4" width="5" height="12" fill="#000" rx="1"/><rect x="33" y="4" width="5" height="12" fill="#ff6600" rx="1"/><rect x="45" y="4" width="5" height="12" fill="#c8c800" rx="1"/></g>
+  <g transform="translate(350,120)"><line x1="0" y1="10" x2="12" y2="10" stroke="#c8c8c8" stroke-width="2.5"/><rect x="12" y="4" width="46" height="12" rx="3" fill="#cc8800"/><line x1="58" y1="10" x2="70" y2="10" stroke="#c8c8c8" stroke-width="2.5"/><rect x="17" y="4" width="5" height="12" fill="#663300" rx="1"/><rect x="25" y="4" width="5" height="12" fill="#000" rx="1"/><rect x="33" y="4" width="5" height="12" fill="#ff6600" rx="1"/><rect x="45" y="4" width="5" height="12" fill="#c8c800" rx="1"/></g>
+  <!-- Row 3 -->
+  <g transform="translate(50,170)"><line x1="0" y1="10" x2="12" y2="10" stroke="#c8c8c8" stroke-width="2.5"/><rect x="12" y="4" width="46" height="12" rx="3" fill="#cc8800"/><line x1="58" y1="10" x2="70" y2="10" stroke="#c8c8c8" stroke-width="2.5"/><rect x="17" y="4" width="5" height="12" fill="#663300" rx="1"/><rect x="25" y="4" width="5" height="12" fill="#000" rx="1"/><rect x="33" y="4" width="5" height="12" fill="#ff6600" rx="1"/><rect x="45" y="4" width="5" height="12" fill="#c8c800" rx="1"/></g>
+  <g transform="translate(150,170)"><line x1="0" y1="10" x2="12" y2="10" stroke="#c8c8c8" stroke-width="2.5"/><rect x="12" y="4" width="46" height="12" rx="3" fill="#cc8800"/><line x1="58" y1="10" x2="70" y2="10" stroke="#c8c8c8" stroke-width="2.5"/><rect x="17" y="4" width="5" height="12" fill="#663300" rx="1"/><rect x="25" y="4" width="5" height="12" fill="#000" rx="1"/><rect x="33" y="4" width="5" height="12" fill="#ff6600" rx="1"/><rect x="45" y="4" width="5" height="12" fill="#c8c800" rx="1"/></g>
+  <g transform="translate(250,170)"><line x1="0" y1="10" x2="12" y2="10" stroke="#c8c8c8" stroke-width="2.5"/><rect x="12" y="4" width="46" height="12" rx="3" fill="#cc8800"/><line x1="58" y1="10" x2="70" y2="10" stroke="#c8c8c8" stroke-width="2.5"/><rect x="17" y="4" width="5" height="12" fill="#663300" rx="1"/><rect x="25" y="4" width="5" height="12" fill="#000" rx="1"/><rect x="33" y="4" width="5" height="12" fill="#ff6600" rx="1"/><rect x="45" y="4" width="5" height="12" fill="#c8c800" rx="1"/></g>
+  <g transform="translate(350,170)"><line x1="0" y1="10" x2="12" y2="10" stroke="#c8c8c8" stroke-width="2.5"/><rect x="12" y="4" width="46" height="12" rx="3" fill="#cc8800"/><line x1="58" y1="10" x2="70" y2="10" stroke="#c8c8c8" stroke-width="2.5"/><rect x="17" y="4" width="5" height="12" fill="#663300" rx="1"/><rect x="25" y="4" width="5" height="12" fill="#000" rx="1"/><rect x="33" y="4" width="5" height="12" fill="#ff6600" rx="1"/><rect x="45" y="4" width="5" height="12" fill="#c8c800" rx="1"/></g>
+  <!-- Band legend -->
+  <rect x="40" y="230" width="400" height="60" rx="6" fill="#111" stroke="#333" stroke-width="1"/>
+  <text x="240" y="250" font-family="monospace" font-size="10" fill="#cc8800" text-anchor="middle" font-weight="bold">10 kΩ · Tolerancia 5% · 1/4W</text>
+  <g>
+    <rect x="70" y="258" width="12" height="12" fill="#663300" rx="2"/><text x="88" y="269" font-family="monospace" font-size="9" fill="#aaa">Café=1</text>
+    <rect x="140" y="258" width="12" height="12" fill="#000" stroke="#444" rx="2"/><text x="158" y="269" font-family="monospace" font-size="9" fill="#aaa">Negro=0</text>
+    <rect x="218" y="258" width="12" height="12" fill="#ff6600" rx="2"/><text x="236" y="269" font-family="monospace" font-size="9" fill="#aaa">Naranja=×1k</text>
+    <rect x="320" y="258" width="12" height="12" fill="#c8c800" rx="2"/><text x="338" y="269" font-family="monospace" font-size="9" fill="#aaa">Oro=5%</text>
+  </g>
+  <text x="240" y="30" font-family="monospace" font-size="13" fill="#cc8800" text-anchor="middle" font-weight="bold">Resistencias 10 kΩ × 100</text>
+</svg>
