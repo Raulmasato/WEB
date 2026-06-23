@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 340" width="480" height="340">
+  <rect width="480" height="340" fill="#0a0a0a"/>
+  <!-- PCB board -->
+  <rect x="130" y="50" width="220" height="240" rx="6" fill="#1a1a4a" stroke="#2a2a6a" stroke-width="2"/>
+  <!-- Display bezel -->
+  <rect x="148" y="68" width="184" height="130" rx="4" fill="#111" stroke="#333" stroke-width="2"/>
+  <!-- OLED screen (dark/lit) -->
+  <rect x="155" y="75" width="170" height="116" rx="2" fill="#000811"/>
+  <!-- Screen content: pixel art waveform -->
+  <g fill="#4488ff" opacity="0.9">
+    <rect x="160" y="115" width="3" height="3"/><rect x="165" y="108" width="3" height="3"/>
+    <rect x="170" y="100" width="3" height="3"/><rect x="175" y="95" width="3" height="3"/>
+    <rect x="180" y="100" width="3" height="3"/><rect x="185" y="108" width="3" height="3"/>
+    <rect x="190" y="115" width="3" height="3"/><rect x="195" y="122" width="3" height="3"/>
+    <rect x="200" y="128" width="3" height="3"/><rect x="205" y="122" width="3" height="3"/>
+    <rect x="210" y="115" width="3" height="3"/><rect x="215" y="108" width="3" height="3"/>
+    <rect x="220" y="100" width="3" height="3"/><rect x="225" y="95" width="3" height="3"/>
+    <rect x="230" y="100" width="3" height="3"/><rect x="235" y="108" width="3" height="3"/>
+    <rect x="240" y="115" width="3" height="3"/><rect x="245" y="122" width="3" height="3"/>
+    <rect x="250" y="128" width="3" height="3"/><rect x="255" y="122" width="3" height="3"/>
+    <rect x="260" y="115" width="3" height="3"/><rect x="265" y="108" width="3" height="3"/>
+    <rect x="270" y="100" width="3" height="3"/><rect x="275" y="95" width="3" height="3"/>
+    <rect x="280" y="100" width="3" height="3"/><rect x="285" y="108" width="3" height="3"/>
+    <rect x="290" y="115" width="3" height="3"/><rect x="295" y="122" width="3" height="3"/>
+    <rect x="300" y="128" width="3" height="3"/>
+    <!-- text pixels simulation -->
+    <rect x="160" y="82" width="50" height="8" rx="1" opacity="0.6"/>
+    <rect x="160" y="93" width="35" height="6" rx="1" opacity="0.4"/>
+    <!-- temp reading -->
+    <rect x="240" y="82" width="80" height="12" rx="1" opacity="0.7"/>
+  </g>
+  <!-- Screen glow -->
+  <rect x="155" y="75" width="170" height="116" rx="2" fill="url(#glow)" opacity="0.1"/>
+  <defs>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#4488ff" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#4488ff" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <!-- SSD1306 driver IC -->
+  <rect x="185" y="215" width="110" height="40" rx="3" fill="#111" stroke="#333" stroke-width="1.5"/>
+  <text x="240" y="231" font-family="monospace" font-size="8" fill="#888" text-anchor="middle">SSD1306</text>
+  <text x="240" y="247" font-family="monospace" font-size="7" fill="#555" text-anchor="middle">OLED Driver</text>
+  <!-- I2C pin header -->
+  <rect x="165" y="268" width="150" height="14" rx="2" fill="#111" stroke="#444" stroke-width="1"/>
+  <g fill="#c8a000">
+    <rect x="172" y="271" width="8" height="8" rx="1"/>
+    <rect x="192" y="271" width="8" height="8" rx="1"/>
+    <rect x="212" y="271" width="8" height="8" rx="1"/>
+    <rect x="232" y="271" width="8" height="8" rx="1"/>
+  </g>
+  <text x="176" y="292" font-family="monospace" font-size="8" fill="#aaa" text-anchor="middle">GND</text>
+  <text x="196" y="292" font-family="monospace" font-size="8" fill="#aaa" text-anchor="middle">VCC</text>
+  <text x="216" y="292" font-family="monospace" font-size="8" fill="#aaa" text-anchor="middle">SCL</text>
+  <text x="236" y="292" font-family="monospace" font-size="8" fill="#aaa" text-anchor="middle">SDA</text>
+  <!-- Label -->
+  <text x="240" y="38" font-family="monospace" font-size="11" fill="#4488ff" text-anchor="middle" font-weight="bold">OLED 0.96" I2C 128×64</text>
+  <text x="240" y="320" font-family="monospace" font-size="9" fill="#2266cc" text-anchor="middle">I2C Interface · 3.3V / 5V</text>
+</svg>

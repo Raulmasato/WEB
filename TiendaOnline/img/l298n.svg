@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 340" width="480" height="340">
+  <rect width="480" height="340" fill="#0d1a0d"/>
+  <!-- PCB -->
+  <rect x="40" y="30" width="400" height="280" rx="6" fill="#1a3300" stroke="#335500" stroke-width="2"/>
+  <!-- L298N IC (large black chip with heatsink) -->
+  <rect x="155" y="90" width="110" height="110" rx="4" fill="#111" stroke="#444" stroke-width="2"/>
+  <!-- Heatsink fins -->
+  <g fill="#555" stroke="#444" stroke-width="0.5">
+    <rect x="145" y="88" width="8" height="114" rx="1"/>
+    <rect x="270" y="88" width="8" height="114" rx="1"/>
+    <rect x="148" y="95" width="130" height="4"/>
+    <rect x="148" y="105" width="130" height="4"/>
+    <rect x="148" y="115" width="130" height="4"/>
+    <rect x="148" y="125" width="130" height="4"/>
+    <rect x="148" y="135" width="130" height="4"/>
+    <rect x="148" y="145" width="130" height="4"/>
+    <rect x="148" y="155" width="130" height="4"/>
+    <rect x="148" y="165" width="130" height="4"/>
+    <rect x="148" y="175" width="130" height="4"/>
+    <rect x="148" y="185" width="130" height="4"/>
+  </g>
+  <text x="210" y="148" font-family="monospace" font-size="12" fill="#aaa" text-anchor="middle" font-weight="bold">L298N</text>
+  <text x="210" y="163" font-family="monospace" font-size="8" fill="#666" text-anchor="middle">Dual H-Bridge</text>
+  <!-- Voltage regulator -->
+  <rect x="305" y="110" width="35" height="60" rx="3" fill="#333" stroke="#555" stroke-width="1.5"/>
+  <text x="322" y="144" font-family="monospace" font-size="7" fill="#aaa" text-anchor="middle">7805</text>
+  <!-- Capacitors -->
+  <ellipse cx="350" cy="220" rx="14" ry="22" fill="#1144aa" stroke="#2255cc" stroke-width="1.5"/>
+  <ellipse cx="385" cy="220" rx="14" ry="22" fill="#1144aa" stroke="#2255cc" stroke-width="1.5"/>
+  <line x1="350" y1="198" x2="350" y2="195" stroke="#c8a000" stroke-width="2"/>
+  <line x1="385" y1="198" x2="385" y2="195" stroke="#c8a000" stroke-width="2"/>
+  <!-- Terminal blocks - motor output -->
+  <rect x="42" y="120" width="60" height="80" rx="3" fill="#1a5500" stroke="#336600" stroke-width="1.5"/>
+  <g fill="#aaa" stroke="#888" stroke-width="1">
+    <rect x="50" y="128" width="18" height="16" rx="2"/><rect x="76" y="128" width="18" height="16" rx="2"/>
+    <rect x="50" y="152" width="18" height="16" rx="2"/><rect x="76" y="152" width="18" height="16" rx="2"/>
+    <rect x="50" y="176" width="18" height="16" rx="2"/><rect x="76" y="176" width="18" height="16" rx="2"/>
+  </g>
+  <!-- Terminal blocks - power -->
+  <rect x="378" y="120" width="60" height="60" rx="3" fill="#1a5500" stroke="#336600" stroke-width="1.5"/>
+  <g fill="#aaa" stroke="#888" stroke-width="1">
+    <rect x="386" y="128" width="18" height="16" rx="2"/><rect x="412" y="128" width="18" height="16" rx="2"/>
+    <rect x="386" y="152" width="18" height="16" rx="2"/><rect x="412" y="152" width="18" height="16" rx="2"/>
+  </g>
+  <!-- Enable/Input pin headers -->
+  <rect x="130" y="260" width="220" height="16" rx="2" fill="#111" stroke="#444" stroke-width="1"/>
+  <g fill="#c8a000">
+    <rect x="135" y="263" width="8" height="10" rx="1"/><rect x="150" y="263" width="8" height="10" rx="1"/>
+    <rect x="165" y="263" width="8" height="10" rx="1"/><rect x="180" y="263" width="8" height="10" rx="1"/>
+    <rect x="195" y="263" width="8" height="10" rx="1"/><rect x="210" y="263" width="8" height="10" rx="1"/>
+    <rect x="225" y="263" width="8" height="10" rx="1"/><rect x="240" y="263" width="8" height="10" rx="1"/>
+    <rect x="255" y="263" width="8" height="10" rx="1"/><rect x="270" y="263" width="8" height="10" rx="1"/>
+    <rect x="285" y="263" width="8" height="10" rx="1"/><rect x="300" y="263" width="8" height="10" rx="1"/>
+  </g>
+  <!-- 5V LED -->
+  <circle cx="320" cy="290" r="5" fill="#00cc00" opacity="0.9"/>
+  <!-- Labels -->
+  <text x="72" y="214" font-family="monospace" font-size="8" fill="#44aa44" text-anchor="middle">MOTOR</text>
+  <text x="408" y="192" font-family="monospace" font-size="8" fill="#44aa44" text-anchor="middle">PWR</text>
+  <text x="240" y="295" font-family="monospace" font-size="9" fill="#44aa44" text-anchor="middle">ENA  IN1  IN2  IN3  IN4  ENB</text>
+  <text x="240" y="55" font-family="monospace" font-size="13" fill="#55bb55" text-anchor="middle" font-weight="bold">L298N Puente H</text>
+</svg>

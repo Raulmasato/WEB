@@ -153,18 +153,18 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 <script>
 const productos = [
-  {n:"Arduino Uno R3", m:"Arduino", c:"Microcontroladores", p:8500, st:45, d:"Microcontrolador ATmega328P, 14 pines digitales, 6 analógicos. Ideal para proyectos de electrónica y robótica.", img:"https://placehold.co/480x340/1a1a2e/white?text=Arduino+Uno+R3"},
-  {n:"ESP32 DevKit V1", m:"Espressif", c:"Microcontroladores", p:3200, st:80, d:"Módulo Wi-Fi + Bluetooth dual-core 240MHz. Perfecto para IoT y domótica.", img:"https://placehold.co/480x340/0f3460/white?text=ESP32+DevKit"},
-  {n:"Raspberry Pi 4 Model B 2GB", m:"Raspberry Pi", c:"Computadoras SBC", p:52000, st:12, d:"Computadora de placa única Cortex-A72 1.8GHz, 2GB RAM. USB 3.0, HDMI 4K dual.", img:"https://placehold.co/480x340/e94560/white?text=Raspberry+Pi+4"},
-  {n:"Sensor DHT22 Temp. y Humedad", m:"Aosong", c:"Sensores", p:1200, st:120, d:"Sensor digital de temperatura y humedad. Ideal para estaciones meteorológicas.", img:"https://placehold.co/480x340/533483/white?text=Sensor+DHT22"},
-  {n:"Módulo L298N Puente H Doble", m:"Genérico", c:"Drivers y Módulos", p:1800, st:60, d:"Driver de motores DC y PAP. Control de 2 motores DC, 2A por canal.", img:"https://placehold.co/480x340/2d6a4f/white?text=Puente+H+L298N"},
-  {n:"Pantalla OLED 0.96\" I2C", m:"Genérico", c:"Displays", p:1500, st:75, d:"Display OLED 128×64, interfaz I2C. Controlador SSD1306.", img:"https://placehold.co/480x340/1b4332/white?text=OLED+0.96+I2C"},
-  {n:"Módulo Relay 5V (pack x2)", m:"SunFounder", c:"Drivers y Módulos", p:650, st:200, d:"Módulo de 2 relés. Carga máx 250V AC / 10A. Control 3.3V–5V.", img:"https://placehold.co/480x340/d62828/white?text=Relay+5V+x2"},
-  {n:"Resistencias 10kΩ (pack x100)", m:"Yageo", c:"Componentes Pasivos", p:450, st:500, d:"Resistencias de carbono 10kΩ, 5%, 1/4W. Tira de 100 unidades.", img:"https://placehold.co/480x340/6a4c93/white?text=Resistencias+10k"},
-  {n:"LED RGB 5mm (pack x10)", m:"Genérico", c:"LEDs e Iluminación", p:280, st:800, d:"LEDs RGB de 5mm, cátodo común. 20mA por canal.", img:"https://placehold.co/480x340/f77f00/white?text=LED+RGB+x10"},
-  {n:"Capacitor 100µF 25V (x20)", m:"Nichicon", c:"Componentes Pasivos", p:380, st:600, d:"Capacitores electrolíticos 100µF 25V. Pack de 20.", img:"https://placehold.co/480x340/4a4e69/white?text=Cap+100uF+x20"},
-  {n:"Sensor Ultrasónico HC-SR04", m:"HC-SR", c:"Sensores", p:750, st:150, d:"Sensor de distancia por ultrasonido. Rango 2cm–400cm.", img:"https://placehold.co/480x340/023e8a/white?text=HC-SR04"},
-  {n:"Protoboard 830 + Cables Dupont", m:"Genérico", c:"Herramientas", p:1100, st:90, d:"Protoboard 830 puntos + kit de 65 cables Dupont.", img:"https://placehold.co/480x340/2b9348/white?text=Protoboard+830"},
+  {n:"Arduino Uno R3", m:"Arduino", c:"Microcontroladores", p:8500, st:45, d:"Microcontrolador ATmega328P, 14 pines digitales, 6 analógicos. Ideal para proyectos de electrónica y robótica.", img:"img/arduino-uno.svg"},
+  {n:"ESP32 DevKit V1", m:"Espressif", c:"Microcontroladores", p:3200, st:80, d:"Módulo Wi-Fi + Bluetooth dual-core 240MHz. Perfecto para IoT y domótica.", img:"img/esp32.svg"},
+  {n:"Raspberry Pi 4 Model B 2GB", m:"Raspberry Pi", c:"Computadoras SBC", p:52000, st:12, d:"Computadora de placa única Cortex-A72 1.8GHz, 2GB RAM. USB 3.0, HDMI 4K dual.", img:"img/raspberry-pi-4.svg"},
+  {n:"Sensor DHT22 Temp. y Humedad", m:"Aosong", c:"Sensores", p:1200, st:120, d:"Sensor digital de temperatura y humedad. Ideal para estaciones meteorológicas.", img:"img/dht22.svg"},
+  {n:"Módulo L298N Puente H Doble", m:"Genérico", c:"Drivers y Módulos", p:1800, st:60, d:"Driver de motores DC y PAP. Control de 2 motores DC, 2A por canal.", img:"img/l298n.svg"},
+  {n:"Pantalla OLED 0.96\" I2C", m:"Genérico", c:"Displays", p:1500, st:75, d:"Display OLED 128×64, interfaz I2C. Controlador SSD1306.", img:"img/oled.svg"},
+  {n:"Módulo Relay 5V (pack x2)", m:"SunFounder", c:"Drivers y Módulos", p:650, st:200, d:"Módulo de 2 relés. Carga máx 250V AC / 10A. Control 3.3V–5V.", img:"img/relay.svg"},
+  {n:"Resistencias 10kΩ (pack x100)", m:"Yageo", c:"Componentes Pasivos", p:450, st:500, d:"Resistencias de carbono 10kΩ, 5%, 1/4W. Tira de 100 unidades.", img:"img/resistencias.svg"},
+  {n:"LED RGB 5mm (pack x10)", m:"Genérico", c:"LEDs e Iluminación", p:280, st:800, d:"LEDs RGB de 5mm, cátodo común. 20mA por canal.", img:"img/led-rgb.svg"},
+  {n:"Capacitor 100µF 25V (x20)", m:"Nichicon", c:"Componentes Pasivos", p:380, st:600, d:"Capacitores electrolíticos 100µF 25V. Pack de 20.", img:"img/capacitores.svg"},
+  {n:"Sensor Ultrasónico HC-SR04", m:"HC-SR", c:"Sensores", p:750, st:150, d:"Sensor de distancia por ultrasonido. Rango 2cm–400cm.", img:"img/hcsr04.svg"},
+  {n:"Protoboard 830 + Cables Dupont", m:"Genérico", c:"Herramientas", p:1100, st:90, d:"Protoboard 830 puntos + kit de 65 cables Dupont.", img:"img/protoboard.svg"},
 ];
 function stockBadge(st){
   if(st>10) return '<span class="badge bg-success-subtle text-success small">En stock</span>';
